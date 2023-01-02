@@ -1,5 +1,6 @@
 ---
 import BlogLayout from "../../layouts/blogLayout.astro";
+import Meta from "../../components/Meta.astro";
 
 export async function getStaticPaths() {
   const posts = await Astro.glob("../../posts/**/*.{md,mdx}");
@@ -18,9 +19,27 @@ export async function getStaticPaths() {
 
 const { Content, frontmatter } = Astro.props.post;
 const date = new Date(frontmatter.date);
+
+function shortenString(str, cutoff) {
+  // Split the input string into an array of words
+  const words = str.split(" ");
+
+  // If the number of words is less than or equal to the cutoff, return the original string
+  if (words.length <= cutoff) {
+    return str;
+  }
+
+  // Otherwise, return a shortened string with only as many words as the cutoff allows
+  return words.slice(0, cutoff).join(" ") + "...";
+}
 ---
 
-<BlogLayout title={`${frontmatter.author} | ${frontmatter.title}`}>
+<BlogLayout title={`${frontmatter.title} | ${frontmatter.author}`}>
+  <Meta
+    slot="meta"
+    description={frontmatter.description}
+    tags={frontmatter.tags}
+  />
   <article class="max-w-3xl mx-auto mt-16 mb-64" id="article">
     <aside class="flex space-x-8 mb-14 items-center" id="aside">
       <img
