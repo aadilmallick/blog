@@ -7,7 +7,7 @@ import Blog from "../components/blog.astro";
 <MainLayout>
   <header
     id="hero"
-    class="bg-mainPage w-screen h-[50vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
+    class="hero w-screen h-[50vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
   >
     <nav class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4">
       <div class="w-16 h-full">
@@ -29,3 +29,9 @@ import Blog from "../components/blog.astro";
   </header>
   <Blog />
 </MainLayout>
+
+<style>
+  .hero {
+    background-image: url("/background.jpg");
+  }
+</style>
