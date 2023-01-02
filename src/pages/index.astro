@@ -1,0 +1,31 @@
+---
+import MainLayout from "../layouts/mainLayout.astro";
+import Logo from "../assets/logo-white.png";
+import Blog from "../components/blog.astro";
+---
+
+<MainLayout>
+  <header
+    id="hero"
+    class="bg-mainPage w-screen h-[50vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
+  >
+    <nav class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4">
+      <div class="w-16 h-full">
+        <img src={Logo} alt="" class="w-full h-full" />
+      </div>
+      <div class="flex space-x-4 text-white text-xl">
+        <a
+          href="https://aadilmallick.com/about.html"
+          class="inline-block p-2 hover:animate-pulse">About</a
+        >
+        <a href="/" class="inline-block p-2 hover:animate-pulse">Blog</a>
+        <a
+          href="https://aadilmallick.com/work.html"
+          class="inline-block bg-fuchsia-800 opacity-70 px-8 py-2 rounded-2xl text-fuchsia-200"
+          >Portfolio</a
+        >
+      </div>
+    </nav>
+  </header>
+  <Blog />
+</MainLayout>

@@ -1,0 +1,45 @@
+---
+import "@fontsource/lato";
+import "../styles/article.scss";
+import Logo from "../assets/logo-white.png";
+export interface Props {
+  title?: string;
+}
+
+const { title = "Blog" }: Props = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <header
+      id="hero"
+      class="w-screen h-28 bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
+    >
+      <nav class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4">
+        <div class="w-16 h-full">
+          <img src={Logo} alt="" class="w-full h-full" />
+        </div>
+        <div class="flex space-x-4 text-white text-xl">
+          <a
+            href="https://aadilmallick.com/about.html"
+            class="inline-block p-2 hover:animate-pulse">About</a
+          >
+          <a href="/" class="inline-block p-2 hover:animate-pulse">Blog</a>
+          <a
+            href="https://aadilmallick.com/work.html"
+            class="inline-block bg-fuchsia-800 opacity-70 px-8 py-2 rounded-2xl text-fuchsia-200"
+            >Portfolio</a
+          >
+        </div>
+      </nav>
+    </header>
+    <slot />
+  </body>
+</html>

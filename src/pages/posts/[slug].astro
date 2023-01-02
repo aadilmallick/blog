@@ -1,0 +1,54 @@
+---
+import BlogLayout from "../../layouts/blogLayout.astro";
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob("../../posts/**/*.{md,mdx}");
+
+  return posts.map((post) => {
+    return {
+      params: {
+        slug: post.frontmatter.slug,
+      },
+      props: {
+        post,
+      },
+    };
+  });
+}
+
+const { Content, frontmatter } = Astro.props.post;
+const date = new Date(frontmatter.date);
+---
+
+<BlogLayout title={`${frontmatter.author} | ${frontmatter.title}`}>
+  <article class="max-w-3xl mx-auto mt-16 mb-64">
+    <aside class="flex space-x-8 mb-14 items-center">
+      <img
+        src="/aadilbrickbg.jpg"
+        alt="aadil mallick"
+        class="h-16 w-16 rounded-full object-top m-0"
+      />
+      <div>
+        <h3 class="font-light text-lg tracking-widest uppercase text-gray-500">
+          {frontmatter.author}
+        </h3>
+        <p class="m-0 text-sm">{date.toDateString()}</p>
+      </div>
+      <div class="flex space-x-4 items-center flex-1">
+        {
+          frontmatter.tags.map((tag) => (
+            <span class="inline-block bg-fuchsia-600 text-white text-sm font-bold py-1 px-3 rounded-full uppercase">
+              {tag}
+            </span>
+          ))
+        }
+      </div>
+    </aside>
+    <hr class="-mt-8 mb-14" />
+    <div>
+      <h1>{frontmatter.title}</h1>
+      <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+    </div>
+    <Content />
+  </article>
+</BlogLayout>
