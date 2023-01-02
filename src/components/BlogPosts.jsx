@@ -46,7 +46,7 @@ export const BlogPosts = ({ posts }) => {
         ))}
       </div>
       <div className="border-b-2 border-b-gray-500 mt-1 mb-12"></div>
-      <div className="grid grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {categoryPosts.map((post) => (
           <BlogPost {...post} key={post.slug} />
         ))}
@@ -64,7 +64,7 @@ function BlogPost(props) {
         className="h-56 w-full rounded object-cover"
       />
       <div className="flex bg-slate-200 p-2 my-4 rounded-lg justify-between items-center flex-wrap px-4">
-        <div className="flex space-x-2 items-center">
+        <div className="flex space-x-2 items-center flex-wrap">
           {props.tags.map((tag) => (
             <span
               className="tracking-tight font-semibold uppercase text-xs text-fuchsia-600"

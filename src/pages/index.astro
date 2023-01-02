@@ -2,14 +2,17 @@
 import MainLayout from "../layouts/mainLayout.astro";
 import Logo from "../assets/logo-white.png";
 import Blog from "../components/blog.astro";
+// TODO: HTML SEO, Add footer,
 ---
 
 <MainLayout>
   <header
     id="hero"
-    class="hero w-screen h-[50vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
+    class="hero w-screen h-[20vh] sm:h-[50vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
   >
-    <nav class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4">
+    <nav
+      class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4 flex-col md:flex-row"
+    >
       <div class="w-16 h-full">
         <img src={Logo} alt="" class="w-full h-full" />
       </div>

@@ -20,9 +20,11 @@ const { title = "Blog" }: Props = Astro.props;
   <body class="overflow-x-hidden">
     <header
       id="hero"
-      class="w-screen h-28 bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
+      class="w-screen sm:h-28 h-[20vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
     >
-      <nav class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4">
+      <nav
+        class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4 flex-col md:flex-row"
+      >
         <div class="w-16 h-full">
           <img src={Logo} alt="" class="w-full h-full" />
         </div>

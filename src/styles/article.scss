@@ -4,6 +4,11 @@ $primary: #8138b7;
   background-image: url("../assets/background.jpg");
 }
 
+#article {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 // typography
 
 h1,
@@ -90,4 +95,28 @@ ol {
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  #article {
+    #aside {
+      flex-wrap: wrap;
+    }
+  }
+
+  body {
+    font-size: 18px;
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1.25rem;
+    }
+  }
 }

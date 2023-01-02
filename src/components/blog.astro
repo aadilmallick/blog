@@ -3,7 +3,7 @@ import { BlogPosts } from "./BlogPosts";
 const posts = await Astro.glob("../posts/**/*.{md,mdx}");
 ---
 
-<section id="blog" class="mt-36 max-w-6xl mx-auto mb-36">
+<section id="blog" class="mt-36 max-w-6xl mx-auto mb-36 px-4">
   <BlogPosts
     posts={posts.map((post) => ({ ...post.frontmatter }))}
     client:load
