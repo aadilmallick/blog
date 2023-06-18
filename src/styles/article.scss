@@ -11,6 +11,11 @@ $primary: #8138b7;
 
 // typography
 
+::selection {
+  color: white;
+  background: $primary;
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +28,7 @@ h4 {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 h2 {
   font-size: 2rem;
@@ -35,15 +41,23 @@ h4 {
 }
 
 p {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
 }
 
 body {
   font-size: 1.34rem;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 // other elements
+
+p code {
+  background-color: whitesmoke;
+  color: rgb(212, 8, 1);
+  padding: 0 6px;
+}
 
 img {
   max-width: 100%;
@@ -77,10 +91,12 @@ blockquote ::first-letter {
 pre {
   background: #222;
   display: inline-block;
-  border-radius: 5%;
+  border-radius: 15px;
   padding: 1rem 2rem;
   color: yellow;
   margin-bottom: 1.5rem;
+  max-width: 800px;
+  box-shadow: 0px 10px 8px 2px #22222236;
 }
 
 ul {

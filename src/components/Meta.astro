@@ -2,20 +2,26 @@
 export interface Props {
   description?: string;
   tags?: string[];
+  title?: string;
+  image?: string;
 }
 
-const { description = "This is Aadil Mallick's blog", tags = [] }: Props =
-  Astro.props;
+const {
+  description = "This is Aadil Mallick's blog",
+  tags = [],
+  title = "Aadil Mallick Blog",
+}: Props = Astro.props;
 ---
 
 <meta name="description" content={`${String(description).slice(0, 150)}...`} />
-<meta
-  name="keywords"
-  content={`Aadil Mallick, blog, web developer, ${tags.join(", ")}`}
-/>
 <meta name="author" content="Aadil Mallick" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
 <link rel="manifest" href="/site.webmanifest" />
+
+<meta property="og:title" content={`${title}`} />
+<meta property="og:type" content="website" />
+<!-- TODO: do something here, fix url -->
+<meta property="og:url" content="https://aadilmallick.com" />

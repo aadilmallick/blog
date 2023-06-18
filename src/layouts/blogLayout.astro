@@ -18,10 +18,10 @@ const { title = "Blog" }: Props = Astro.props;
     <slot name="meta" />
     <title>{title}</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body>
     <header
       id="hero"
-      class="w-screen sm:h-28 h-[20vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
+      class="w-screen sm:h-36 h-[20vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
     >
       <nav
         class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4 flex-col md:flex-row"
@@ -44,5 +44,8 @@ const { title = "Blog" }: Props = Astro.props;
       </nav>
     </header>
     <slot />
+    <footer class="bg-fuchsia-800 text-white text-center py-8">
+      <p class="text-xl">© 2021 Aadil Mallick</p>
+    </footer>
   </body>
 </html>

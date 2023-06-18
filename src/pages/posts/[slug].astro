@@ -19,6 +19,7 @@ export async function getStaticPaths() {
 
 const { Content, frontmatter } = Astro.props.post;
 const date = new Date(frontmatter.date);
+date.setDate(date.getDate() + 1);
 
 function shortenString(str, cutoff) {
   // Split the input string into an array of words
@@ -39,6 +40,8 @@ function shortenString(str, cutoff) {
     slot="meta"
     description={frontmatter.description}
     tags={frontmatter.tags}
+    title={frontmatter.title}
+    image={frontmatter.image.url}
   />
   <article class="max-w-3xl mx-auto mt-16 mb-64" id="article">
     <aside class="flex space-x-8 mb-14 items-center" id="aside">
@@ -66,7 +69,11 @@ function shortenString(str, cutoff) {
     <hr class="-mt-8 mb-14" />
     <div>
       <h1>{frontmatter.title}</h1>
-      <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+      <img
+        src={frontmatter.image.url}
+        alt={frontmatter.image.alt}
+        class="w-full object-cover mb-0"
+      />
     </div>
     <Content />
   </article>
