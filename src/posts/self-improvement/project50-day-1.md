@@ -1,10 +1,10 @@
 ---
-title: "Project 50 - day 1: Change your life in 50 days"
-slug: project50-day-1
+title: "Project 50 - day 0: Change your life in 50 days"
+slug: project50-day-0
 excerpt: "The Project 50 challenge is a self-improvement challenge designed to change your life in 50 days. Sounds too good to be true, right? Well, it probably is, but I'll take anything at this point."
 date: 2023-06-19
 author: Aadil Mallick
-description: "Day 1 of the project 50 challenge"
+description: "Day 0 of the project 50 challenge"
 image:
   url: "https://qph.cf2.quoracdn.net/main-qimg-1942ba6422f706b48cb1de43e3656c3a-lq"
   alt: "Thanos relaxing"
@@ -27,6 +27,8 @@ Below are the rules, but the most important one is this: if you mess up or miss 
    - For me, this means morning sunlight, anki, stretching, meditation, ear training, a morning run, and journaling.
 7. Track daily progress.
 
+Here's the notion template link: [notion template](https://pretty-squid-62a.notion.site/PROJECT50-7fce263bd7484f3b937530ef131581ad?pvs=4)
+
 # My 10 rules
 
 I've already been doing most of these habits, like meditating, reading, and waking up at 8 AM (I wake up at 6), so I'm going to be adding a few more rules to make this more applicable to me and actually spark some change. For other rules, I've actually been super close, like how I do boxing and running pretty much everyday, but I'll occasionally indulge in junk food once a month or so. But the baseline is this: _I've been too half-@ssed about everything_. I need dead-on consistency. Nothing else will cut it. So here are my rules:
@@ -43,4 +45,15 @@ I've already been doing most of these habits, like meditating, reading, and waki
 9. Guitar practice for 1 hour a day.
 10. Bass practice for 30 minutes a day.
 
-# Day 1 summary
+## How I'm going to track my progress
+
+There are two ways I'm going to track my progress:
+
+1. Write in a journal, online or paper. There's actually a really nice notion template you can use to track your progress.
+2. Record a short video telling what I did today - _in spanish_.
+
+# Day 0 guide
+
+I hope this goes well. For the most part, I have good habits, and although it doesn't feel like I've changed that much, who I am now and who I was just two years ago are completely different people.
+
+[video 1](https://www.youtube.com/shorts/iVSQj6_5aLc)
