@@ -9,10 +9,6 @@ export const BlogPosts = ({ posts }) => {
       : "text-gray-400 cursor-pointer hover:text-fuchsia-400";
   }
 
-  useEffect(() => {
-    console.log(categoryPosts);
-  }, [tag]);
-
   const changeTag = (tag) => {
     setTag(tag);
     if (tag === "all") {
@@ -57,13 +53,13 @@ export const BlogPosts = ({ posts }) => {
 
 function BlogPost(props) {
   return (
-    <div className="bg-slate-50 p-4 shadow-lg">
+    <div className="bg-slate-50 p-4 shadow-lg flex flex-col items-start">
       <img
         src={props.image.url}
         alt={props.image.alt}
         className="h-56 w-full rounded object-cover"
       />
-      <div className="flex bg-slate-200 p-2 my-4 rounded-lg justify-between items-center flex-wrap px-4">
+      <div className="flex bg-slate-200 self-stretch p-2 my-4 rounded-lg justify-between items-center flex-wrap px-4">
         <div className="flex space-x-2 items-center flex-wrap">
           {props.tags.map((tag) => (
             <span
@@ -79,11 +75,11 @@ function BlogPost(props) {
       <h2 className="font-bold text-xl capitalize hover:text-fuchsia-600 transition-colors line-clamp-2">
         <a href={`/posts/${props.slug}`}>{props.title}</a>
       </h2>
-      <p className="leading-relaxed text-gray-400 line-clamp-4 mt-2">
+      <p className="leading-relaxed text-gray-400 line-clamp-4 mt-2 flex-1">
         {props.excerpt}
       </p>
       <a
-        className="inline-block px-8 py-2 mt-4 bg-fuchsia-600 text-white font-bold text-lg rounded-md cursor-pointer active:opacity-75"
+        className="inline-block px-8 py-2 mt-4 bg-fuchsia-600 text-white font-bold text-lg rounded-md cursor-pointer hover:opacity-80 transition-opacity"
         href={`/posts/${props.slug}`}
       >
         Read More
