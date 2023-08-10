@@ -53,8 +53,10 @@ When you don't want to do that last rep, when you don't want to run that last mi
 Here's some of my cookies:
 
 - I finished the La La Land epilogue piano piece even though I've only been playing for 2.5 years. I've made amazing progress. Granted, I can't play through the entire song without making some minor mistakes, but I did it. I may still feel empty inside, but I'll be damned if I didn't do it.
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OkutU-jdArU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="w-full">
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OkutU-jdArU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full aspect-video"></iframe>
+    </div>
 
 - I used to be so afraid of music theory, but in the first summer of quarantine, I suddenly had the urge to read the _Visually Piano_ book after watching demon slayer and trying to play Gurenge on piano. What followed was a love for music theory. I can't call it passion, because that's not what it was. It was obsession, amusement, wonder. Something I was scared of for so long turned out to be so laughably simple. I understand why things sounded good, and how to make things sound good. I finally understand that a _major scale_ wasn't just a buzzword but a practical thing I could use in my playing. It's like when you learn a new language, and suddenly you can unlock an entire new world of meaning. You could only laugh at how limited your view of life was before.
 - I deleted all social media. To be honest, this wasn't that hard, since it's not like I had any friends on there, but I'm still proud of myself. My biggest flaw is that I'm all bark, no bite. A talker and not an actor. A guy who got put on the sex offender registry for peeing outside and not a person who goes into school zones and well ... I'll leave it there. But by deleting social media, I took the first step to take back control of my life. I deleted Twitter, Instagram, and Snapchat. Maybe you consider YouTube as social media, but come on.

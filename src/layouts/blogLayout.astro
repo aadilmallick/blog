@@ -21,13 +21,13 @@ const { title = "Blog" }: Props = Astro.props;
   <body>
     <header
       id="hero"
-      class="w-screen h-24 bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100 fixed z-10 top-0 left-0 border-b-4 border-purple-400 shadow-lg"
+      class="w-screen h-36 sm:h-20 bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100 fixed z-10 top-0 left-0 border-b-4 border-purple-400 shadow-lg"
     >
       <nav
-        class="max-w-6xl mx-auto h-24 flex justify-between items-center p-4 flex-col md:flex-row"
+        class="max-w-6xl mx-auto h-full flex justify-between items-center p-2 flex-col sm:flex-row"
       >
-        <div class="w-16 h-full">
-          <img src={Logo} alt="" class="w-full h-full" />
+        <div class="w-16 h-16">
+          <img src={Logo} alt="" class="w-full h-full object-cover m-0" />
         </div>
         <div class="flex space-x-4 text-white text-xl">
           <a

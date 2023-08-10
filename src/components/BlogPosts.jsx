@@ -30,7 +30,7 @@ export const BlogPosts = ({ posts }) => {
 
   return (
     <>
-      <div className="flex space-x-4 text-lg">
+      <div className="flex flex-wrap gap-4 text-lg">
         {categories.map((category) => (
           <h4
             className={`${styleCurrentTag(category)}`}
