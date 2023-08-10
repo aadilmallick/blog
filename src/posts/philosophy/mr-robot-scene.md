@@ -4,7 +4,7 @@ slug: mr-robot-scene
 excerpt: "Mr. Robot is a show that has a lot of great scenes. But there is one scene that I think is the best scene in the entire show..."
 date: 2023-02-21
 author: Aadil Mallick
-description: "My thoughts on the most important scene in Mr. Robot"
+description: "My thoughts on the most important scene in Mr. Robot, yet also the most overlooked one"
 image:
   url: "https://flxt.tmsimg.com/assets/p11682476_b_v13_ae.jpg"
   alt: "Mr Robot"

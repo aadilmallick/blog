@@ -4,13 +4,15 @@ export interface Props {
   tags?: string[];
   title?: string;
   image?: string;
+  canonicalUrl?: string;
 }
 
 const {
-  description = "This is Aadil Mallick's blog",
+  description = "This is Aadil Mallick's blog. Come here for coding, life, and more. Or don't. Whatever.",
   tags = [],
   title = "Aadil Mallick Blog",
-  image = "/background.jpg",
+  image = "https://static.wixstatic.com/media/303e7f_376aa81f7047471197e6f5018fc52d0b~mv2.jpg/v1/fill/w_300,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20230509_150357%20-%20Aadil%20Mallick.jpg",
+  canonicalUrl = "https://aadilmallickblog.tech",
 }: Props = Astro.props;
 ---
 
@@ -21,8 +23,17 @@ const {
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
 <link rel="manifest" href="/site.webmanifest" />
+<link rel="canonical" href={`${canonicalUrl}`} />
 
 <meta property="og:title" content={`${title}`} />
 <meta property="og:type" content="website" />
 <!-- TODO: do something here, fix url -->
 <meta property="og:url" content="https://aadilmallickblog.tech" />
+<meta property="og:image" content={`${image}`} />
+<meta
+  property="og:description"
+  content={`${String(description).slice(0, 150)}...`}
+/>
+<meta property="og:site_name" content="Aadil Mallick Blog" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content={`${image}`} />
