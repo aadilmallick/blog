@@ -1,6 +1,6 @@
 ---
 title: "The best lessons from the best youtube productivity videos"
-slug: dan-koe-videos
+slug: best-productivity-videos
 excerpt: "Here are some of the best lessons from the best productivity videos on youtube..."
 date: 2023-02-21
 author: Aadil Mallick
@@ -14,7 +14,9 @@ sub_tags: []
 
 ## You aren't successful because you care too much - Dan Koe
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U1tVnANCDH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="w-full my-8">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U1tVnANCDH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe>
+</div>
 
 The only way to get success is to generate self-confidence. Then only way to get self-confidence is to stop caring what other people think of you.
 
@@ -71,14 +73,20 @@ Here are some todos that we can all take from this video. Change them into your 
 - [ ] Be conscious of how you present yourself. Make sure you are welcoming to other people rather than intimidating.
 - [ ] During the day, make sure you are not doing anything that doesn't level up your life. Only participate in mind-numbing activities in the night to wind down.
 
-## overst
+## Overstimulation
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SpQ33oki4yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="w-full my-8">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SpQ33oki4yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe></iframe>
+</div>
 
-you watch netflix and do social media because you are living a life you want to escape from. The only way to overcome this addiction is to create a life you don't want to escape from.
+you watch Netflix and do social media because you are living a life you want to escape from. The only way to overcome this addiction is to create a life you don't want to escape from.
 
 Remember that each time you indulge in these activities, you are taking away from your future self's happiness. Each of these vices is nothing more than trying to escape emotional pain.
 
-Look at it for what it is. You're not watching Youtube or scrolling on Instagram because you want to. You're doing it because you want to escape from the emotional pain of your current life.
+Look at it for what it is. You're not watching YouTube or scrolling on Instagram because you want to. You're doing it because you want to escape from the emotional pain of your current life.
 
-No one is coming to save you, to stop you from watching Youtube and to make you get up and put work into your goals. Nobody. Only you can save yourself. So whenever you don't feel like doing work, remember that nobody else will tell you to work. Only you can. So get up and do it.
+No one is coming to save you, to stop you from watching YouTube and to make you get up and put work into your goals. Nobody. Only you can save yourself. So whenever you don't feel like doing work, remember that nobody else will tell you to work. Only you can. So get up and do it.
+
+## How to fix your life
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dw6hn8aisIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
