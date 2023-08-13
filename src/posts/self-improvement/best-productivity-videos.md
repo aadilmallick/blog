@@ -140,3 +140,21 @@ The second part of fixing your life is to prime your brain to think positively o
 3. Get 10 minutes of morning sunlight
 4. Do 10 rounds of 10 pullups, 20 pushups, and 30 squats, all as fast as possible. 
 5. Do the rule of 3: Write out all your todos in the day, and circle the three most important ones. Do those first. 
+
+## Creating a perfect schedule
+
+<div class="max-w-full my-8"><iframe width="560" height="315" src="https://www.youtube.com/embed/BcV0rF5T8X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="aspect-video w-full"></iframe>
+</div>
+
+For 6 days a week, become a **maker**, where you only focus on the creative, deep tasks like studying and creating. For the other 1 day, become a **manager**, where you just focus on your todos. 
+
+On the manager day, you run through all your piled todos. This schedule has the advantage of getting through your todos without ruining your focus everyday. 
+
+Whenever you are procrastinating on something, grab a pen and paper and do the following: 
+
+1. Write down exactly how you're feeling regarding the task
+2. Why don't you want to do this task? 
+3. What are you trying to avoid? 
+4. What do you think you need? 
+5. Why should you do this task? 
+
