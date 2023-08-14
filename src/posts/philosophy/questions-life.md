@@ -10,6 +10,7 @@ image:
   alt: "Something"
 tags: ["philosophy", "personal"]
 sub_tags: []
+draft: true
 ---
 
 Here's just a quick table of contents to skip around from place to place.

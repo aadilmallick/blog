@@ -1,0 +1,14 @@
+
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "That one scene from Mr. Robot nobody talks about",
+  "headline": "That one scene from Mr. Robot nobody talks about",
+  "author": {
+    "@type": "Person",
+    "name": "Aadil Mallick",
+    "url" : "https://aadilmallick.com/about"
+  },
+  "datePublished": "2023-02-22",
+  "image": "https://flxt.tmsimg.com/assets/p11682476_b_v13_ae.jpg"
+}

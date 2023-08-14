@@ -1,6 +1,7 @@
 ---
 import { BlogPosts } from "./BlogPosts";
-const posts = await Astro.glob("../posts/**/*.{md,mdx}");
+let posts = await Astro.glob("../posts/**/*.{md,mdx}");
+posts = posts.filter((post) => post.frontmatter.draft !== true);
 ---
 
 <section id="blog" class="mt-36 max-w-6xl mx-auto mb-36 px-4">
