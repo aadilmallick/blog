@@ -10,6 +10,7 @@ image:
   alt: "grand blue"
 tags: ["anime"]
 sub_tags: []
+draft: true
 ---
 
 When you want a laugh, your first thought may not be to get it from anime, but I promise you that some of these will have you rolling on the floor. 
