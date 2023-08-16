@@ -38,8 +38,6 @@ Elliot calls us out for what we are. He's busted pedophiles, gamblers, heavy dri
 
 But Elliot can't find Idealliot's demons. Is it really possible for someone to be so happy, for someone to unironically post 8 pictures of their dog and friends every day? His beliefs almost crumbled ... until he found something.
 
-// add image here
-
 In probably the weirdest meta twist this season, Idealliot has drawn out the exact story and characters from Mr. Robot, which he should have no knowledge about. Elliot is Idealliot's demon.
 
 When they confront each other, Idealliot admits that while he loves his success, his friends, and his normal life, he often fantasizes about being Elliot, the competent hacker who leads an exciting - yet undeniably tragic - life.

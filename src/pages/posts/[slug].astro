@@ -51,9 +51,11 @@ function shortenString(str, cutoff) {
         class="h-16 w-16 rounded-full object-top m-0"
       />
       <div>
-        <h3 class="font-light text-lg tracking-widest uppercase text-gray-500">
+        <p
+          class="font-light text-lg tracking-widest uppercase text-gray-500 m-0"
+        >
           {frontmatter.author}
-        </h3>
+        </p>
         <p class="m-0 text-sm">{date.toDateString()}</p>
       </div>
       <div class="flex space-x-4 items-center flex-1">
@@ -76,5 +78,57 @@ function shortenString(str, cutoff) {
       />
     </div>
     <Content />
+    <!-- call to action: share article  -->
+
+    <div
+      class="mt-4 py-8 px-4 flex bg-slate-100 rounded-lg items-center gap-8 flex-wrap justify-center md:justify-start shadow-lg"
+    >
+      <div class="flex gap-4 items-center">
+        <img
+          src="/aadilbrickbg.jpg"
+          alt="aadil mallick"
+          class="h-16 w-16 rounded-full object-top m-0"
+          height="64"
+          width="64"
+          loading="lazy"
+        />
+        <div>
+          <p
+            class="font-light text-lg tracking-widest uppercase text-gray-500 m-0"
+          >
+            {frontmatter.author}
+          </p>
+          <p class="m-0 text-sm">{date.toDateString()}</p>
+        </div>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <p class="m-0 text-center sm:text-left">
+          If you liked this article, why not share it?
+        </p>
+        <button
+          id="share"
+          class="bg-black text-white font-semibold text-base tracking-wide py-2 px-4 rounded-lg hover:bg-slate-200 hover:text-black transition duration-200 ease-in-out"
+          >Share This Article</button
+        >
+      </div>
+    </div>
   </article>
 </BlogLayout>
+
+<script
+  define:vars={{
+    url: `https://aadilmallickblog.tech/posts/${frontmatter.slug}`,
+    title: frontmatter.title,
+    text: `Article by Aadil Mallick: ${frontmatter.description}`,
+  }}
+>
+  const shareBtn = document.querySelector("#share");
+
+  shareBtn.addEventListener("click", () => {
+    navigator.share({
+      title: title,
+      text: text,
+      url: url,
+    });
+  });
+</script>

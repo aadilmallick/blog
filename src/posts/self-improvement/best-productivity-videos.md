@@ -76,7 +76,7 @@ Here are some todos that we can all take from this video. Change them into your 
 ## Overstimulation
 
 <div class="w-full my-8">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SpQ33oki4yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SpQ33oki4yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe>
 </div>
 
 you watch Netflix and do social media because you are living a life you want to escape from. The only way to overcome this addiction is to create a life you don't want to escape from.
@@ -138,8 +138,41 @@ The second part of fixing your life is to prime your brain to think positively o
 1. Wake up 
 2. Drink 3 glasses of water
 3. Get 10 minutes of morning sunlight
-4. Do 10 rounds of 10 pullups, 20 pushups, and 30 squats, all as fast as possible. 
+4. Do 10 rounds of 10 pullups, 20 pushups, and 30 squats, all as fast as possible. Exercising in the morning consistently and consecutively builds the skill of **consistency**. 
 5. Do the rule of 3: Write out all your todos in the day, and circle the three most important ones. Do those first. 
+
+### Best sleep Routine
+
+<div class="max-w-full my-8"><iframe width="560" height="315" src="https://www.youtube.com/embed/h49TDVnMSKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full aspect-video"></iframe>
+</div>
+
+1. 2 hours before going to sleep, start your nighttime routine by blocking all blue light with **blue light blocking glasses**. 
+2. Take a 2 minute warm shower **1 hour** before going to sleep, which lowers body temperature. Lowering body temperature makes us sleepy. 
+3. Wash your face, because just do it. 
+4. Apply deodorant
+5. Have 40 grams of protein only before night. It causes optimal protein synthesis. 
+	- You should not eat any carbs, as they will raise insulin. 
+6. Reading makes you sleepy. Read at least 6 pages during nighttime to fall asleep. 
+7. Write a todolist exactly 5 minutes before going to sleep 
+
+### Get good looks 
+
+<div class="max-w-full my-8"><iframe width="560" height="315" src="https://www.youtube.com/embed/fMQDrhS5HaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full aspect-video"></iframe>
+</div>
+
+
+It's hard to be happy and productive when you have low self-esteem, so follow these tips to improve your looks and thus your self-image. 
+
+1. Have good teeth: Use **whitening strips**, **floss** everyday. 
+	- Put on whitening strips before a shower. Then take them off once you exit. 
+2. Improve your skin
+	- People with acne are viewed as shy, rebellious, and dumb. To fix this, improve your skin. 
+	- Use 2% salicylic acid every day when washing your face. 
+	- Eat 2,000 mg of fish oil everyday. 
+3. Go to the gym 
+4. Fix your patchy beard. Use rogaine after using a dermaroller
+5. 
+
 
 ## Creating a perfect schedule
 
@@ -174,4 +207,4 @@ Whenever you are procrastinating on something, grab a pen and paper and do the f
 	- **Double breathing technique** : Inhale deeply, then at the top, take a quick shallow breath, and then exhale deeply. This gives you a surge of energy for when you're tired. 
 	- **Alternate nostril breathing**: Block the left nostril and breath in and out with the right. Block the right nostril and breath in and out with the left. This is good for calming yourself down when anxious. 
 7. Do reflective journaling. Just freewrite about how your day went. Write three things that you're grateful for everyday. 
-8. 
+
