@@ -10,4 +10,5 @@ image:
   alt: "Science of Wellbeing"
 tags: ["self improvement"]
 sub_tags: []
+draft: true
 ---

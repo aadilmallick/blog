@@ -10,6 +10,7 @@ image:
   alt: "Stoicism"
 tags: ["philosophy"]
 sub_tags: []
+draft: true
 ---
 
 Stoicism is an ancient Greek philosophy for how to live life - pretty much the closest thing to a manual for life we'll ever have. 

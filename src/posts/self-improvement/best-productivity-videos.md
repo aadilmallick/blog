@@ -158,3 +158,20 @@ Whenever you are procrastinating on something, grab a pen and paper and do the f
 4. What do you think you need? 
 5. Why should you do this task? 
 
+## 10 small things you should do every day
+
+<div class="max-w-full my-8"><iframe width="560" height="315" src="https://www.youtube.com/embed/hU84_LzJOY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="aspect-video w-full"></iframe>
+</div>
+
+1. Wear nice clothes. Wear either red clothes, soft clothes, or clothes with patterns, as they make you feel more confident and give you dopamine
+2. Do a posture-correction routine: Mckenzie exercise
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/hU84_LzJOY8?clip=UgkxWKvvelGkSarzsSoVcBSMHvi5wO9XW9yV&amp;clipt=EMTZBhikrgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="aspect-video w-full"></iframe>
+3. Listen for an audiobook for 10 minutes a day. Consistent reading improves your mind. 
+4. Fix your insecurities. You cannot be happy if you have low self-esteem, so you need to fix that problem. You could go to the gym everyday to solve your insecurities. 
+	- Understand the **eccentric portion** of weight-lifting is the most important. Always focus on letting the weight fall back down slowly. 
+5. Take a 10 minute walk to have healthy blood flow 
+6. Use breathing to control your mental state
+	- **Double breathing technique** : Inhale deeply, then at the top, take a quick shallow breath, and then exhale deeply. This gives you a surge of energy for when you're tired. 
+	- **Alternate nostril breathing**: Block the left nostril and breath in and out with the right. Block the right nostril and breath in and out with the left. This is good for calming yourself down when anxious. 
+7. Do reflective journaling. Just freewrite about how your day went. Write three things that you're grateful for everyday. 
+8. 

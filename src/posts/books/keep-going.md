@@ -10,4 +10,5 @@ image:
   alt: "Stoicism"
 tags: ["philosophy"]
 sub_tags: []
+draft: true
 ---
