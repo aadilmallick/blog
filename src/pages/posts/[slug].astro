@@ -1,8 +1,11 @@
 ---
 import BlogLayout from "../../layouts/blogLayout.astro";
 import Meta from "../../components/Meta.astro";
+
 export async function getStaticPaths() {
   let posts = await Astro.glob("../../posts/**/*.{md,mdx}");
+
+  let postsToLinkTo = posts.filter((post) => post.frontmatter.draft !== true);
 
   return posts.map((post) => {
     return {
@@ -11,12 +14,19 @@ export async function getStaticPaths() {
       },
       props: {
         post,
+        postsToLinkTo,
       },
     };
   });
 }
 
 const { Content, frontmatter } = Astro.props.post;
+let { postsToLinkTo } = Astro.props;
+
+const { slug } = Astro.params;
+
+postsToLinkTo = postsToLinkTo.filter((post) => post.frontmatter.slug !== slug);
+
 const date = new Date(frontmatter.date);
 date.setDate(date.getDate() + 1);
 
@@ -78,40 +88,63 @@ function shortenString(str, cutoff) {
       />
     </div>
     <Content />
-    <!-- call to action: share article  -->
-
-    <div
-      class="mt-4 py-8 px-4 flex bg-slate-100 rounded-lg items-center gap-8 flex-wrap justify-center md:justify-start shadow-lg"
-    >
-      <div class="flex gap-4 items-center">
-        <img
-          src="/aadilbrickbg.jpg"
-          alt="aadil mallick"
-          class="h-16 w-16 rounded-full object-top m-0"
-          height="64"
-          width="64"
-          loading="lazy"
-        />
-        <div>
-          <p
-            class="font-light text-lg tracking-widest uppercase text-gray-500 m-0"
-          >
-            {frontmatter.author}
+    <aside class="mt-4 bg-slate-100 py-8 px-4 rounded-lg shadow-lg">
+      <!-- call to action: share article  -->
+      <div
+        class="flex items-center gap-8 flex-wrap justify-center md:justify-start"
+      >
+        <div class="flex gap-4 items-center">
+          <img
+            src="/aadilbrickbg.jpg"
+            alt="aadil mallick"
+            class="h-16 w-16 rounded-full object-top m-0"
+            height="64"
+            width="64"
+            loading="lazy"
+          />
+          <div>
+            <p
+              class="font-light text-lg tracking-widest uppercase text-gray-500 m-0"
+            >
+              {frontmatter.author}
+            </p>
+            <p class="m-0 text-sm">{date.toDateString()}</p>
+          </div>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <p class="m-0 text-center sm:text-left">
+            If you liked this article, why not share it?
           </p>
-          <p class="m-0 text-sm">{date.toDateString()}</p>
+          <button
+            id="share"
+            class="bg-black text-white font-semibold text-base tracking-wide py-2 px-4 rounded-lg hover:bg-slate-200 hover:text-black transition duration-200 ease-in-out"
+            >Share This Article</button
+          >
         </div>
       </div>
-      <div class="flex flex-col space-y-4">
-        <p class="m-0 text-center sm:text-left">
-          If you liked this article, why not share it?
+      <div class="border-b border-slate-400 my-6"></div>
+      <div class="text-center sm:text-left">
+        <p class="max-w-xs text-lg font-light tracking-wider uppercase m-0">
+          More Articles
         </p>
-        <button
-          id="share"
-          class="bg-black text-white font-semibold text-base tracking-wide py-2 px-4 rounded-lg hover:bg-slate-200 hover:text-black transition duration-200 ease-in-out"
-          >Share This Article</button
-        >
+        <div>
+          {
+            postsToLinkTo
+              .map((post) => (
+                <a
+                  href={`/posts/${post.frontmatter.slug}`}
+                  class="cursor-pointer hover:opacity-50 block"
+                >
+                  {post.frontmatter.title}
+                </a>
+              ))
+              .slice(0, Math.min(postsToLinkTo.length, 5))
+
+            // limit to 5 articles or less
+          }
+        </div>
       </div>
-    </div>
+    </aside>
   </article>
 </BlogLayout>
 

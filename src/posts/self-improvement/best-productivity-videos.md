@@ -10,6 +10,7 @@ image:
   alt: "Dan Koe"
 tags: ["self improvement"]
 sub_tags: []
+draft: true
 ---
 
 ## You aren't successful because you care too much - Dan Koe
