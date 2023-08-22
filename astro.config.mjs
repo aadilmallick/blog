@@ -14,4 +14,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   integrations: [tailwind(), react(), mdx(), sitemap()],
   site: "https://aadilmallickblog.tech/",
+  markdown: {
+    remarkPlugins: [],
+  },
 });

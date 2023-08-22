@@ -45,7 +45,7 @@ You have to take the first step and make yourself open to opportunities and talk
 
 ### Practice
 
-Skill acquisition is a way to level up in the game of life.
+Skill acquisition is the way to level up in the game of life.
 
 You should not even _consider_ doing anything that will not level up your life or is not skill acquisition. The only exception is watching Netflix at **night** when winding down.
 
@@ -71,8 +71,8 @@ Here are some todos that we can all take from this video. Change them into your 
 
 - [ ] When in an anxious situation, zoom out and look at it from a third person perspective.
 - [ ] When in an anxious situation, adopt the situation from another person's perspective.
-- [ ] Be conscious of how you present yourself. Make sure you are welcoming to other people rather than intimidating.
-- [ ] During the day, make sure you are not doing anything that doesn't level up your life. Only participate in mind-numbing activities in the night to wind down.
+- [ ] Be conscious of how you present yourself. Remember other people are friendly and all you have to do is to take the first step and talk to them. 
+- [ ] During the day, make sure you are not doing anything that doesn't level up your life. 
 
 ## Overstimulation
 
@@ -209,3 +209,10 @@ Whenever you are procrastinating on something, grab a pen and paper and do the f
 	- **Alternate nostril breathing**: Block the left nostril and breath in and out with the right. Block the right nostril and breath in and out with the left. This is good for calming yourself down when anxious. 
 7. Do reflective journaling. Just freewrite about how your day went. Write three things that you're grateful for everyday. 
 
+## 5 ways to build Focus and Concentration
+
+<div class="max-w-full my-8"><iframe width="560" height="315" src="https://www.youtube.com/embed/a-KCZ1sghLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="max-w-full"></iframe></div>
+
+1. Precommit to your goals by holding yourself accountable publicly. If you want something more lowkey, write down "I will achieve x within the next 30 minutes". 
+2. Remove distractions by writing them down. During a work session, keep a piece of paper handy next to you and each time you become distracted, write down what distracted you. 
+	- You start to see the common distraction problems you have. 

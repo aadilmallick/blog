@@ -73,35 +73,5 @@ const scriptText = jsonLDGenerator({
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content={`${image}`} />
 
-<!-- <script>
-  function createBlogStructuredData() {
-    const schema = {
-      "@context": "http://schema.org",
-      "@type": "BlogPosting",
-      name: ar,
-      headline: articleName,
-      image: image,
-      author: {
-        "@type": "Person",
-        name: "Aadil Mallick",
-        url: "https://aadilmallick.com/about",
-      },
-      date: date,
-    };
-
-    const script = document.createElement("script");
-    script.textContent = JSON.stringify(schema);
-    script.type = "application/ld+json";
-    document.head.appendChild(script);
-
-    console.log("did it!");
-  }
-
-  createBlogStructuredData();
-</script> -->
-
-<!-- TODO: #1 create a typescript script that creates a json ld script by creating custom web component -->
-<!-- TODO: #2 In custom web component, create shadow DOM and create script element-->
-<!-- TODO: #3 In custom web component, accept dataset props and create schema -->
-<!-- TODO: #4 In custom web component, populate script text content with JSON stringified schema -->
-<!-- TODO: #5 Append Script to Head -->
+<!-- pinterest -->
+<meta name="p:domain_verify" content="59665927352ad7e3815a04f8c5150cb9" />
