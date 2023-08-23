@@ -1,8 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { formatDate } from "../utils/utils";
+
 export const BlogPosts = ({ posts }) => {
   const [tag, setTag] = useState("all");
   const [categoryPosts, setCategoryPosts] = useState(posts);
+  const [search, setSearch] = useState("");
   function styleCurrentTag(category) {
     return tag === category
       ? "font-bold text-fuchsia-600"
@@ -28,9 +30,37 @@ export const BlogPosts = ({ posts }) => {
     return categories;
   }, []);
 
+  function searchPosts(searchQuery) {
+    if (searchQuery === "") {
+      setCategoryPosts(posts);
+    } else {
+      setCategoryPosts(
+        posts.filter((post) =>
+          post.title.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+      );
+    }
+  }
+
   return (
     <>
-      <div className="flex flex-wrap gap-4 text-lg">
+      <div className="max-w-xl">
+        {tag === "all" && (
+          <input
+            type="text"
+            name="postTitle"
+            id=""
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              searchPosts(e.target.value);
+            }}
+            placeholder="search article name"
+            className="w-full border-2 border-gray-300 rounded-md p-2 focus:outline-none focus:border-fuchsia-600"
+          />
+        )}
+      </div>
+      <div className="flex flex-wrap gap-4 text-lg mt-8">
         {categories.map((category) => (
           <h4
             className={`${styleCurrentTag(category)}`}

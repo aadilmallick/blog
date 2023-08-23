@@ -7,9 +7,9 @@ posts = posts.filter((post) => post.frontmatter.draft !== true);
 posts = formatBlogPosts(posts, {});
 ---
 
-<section id="blog" class="mt-36 max-w-6xl mx-auto mb-36 px-4">
+<section id="blog" class="mt-24 max-w-6xl mx-auto mb-36 px-4">
   <BlogPosts
     posts={posts.map((post) => ({ ...post.frontmatter }))}
-    client:idle
+    client:visible
   />
 </section>

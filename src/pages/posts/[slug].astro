@@ -3,6 +3,7 @@ import BlogLayout from "../../layouts/blogLayout.astro";
 import Meta from "../../components/Meta.astro";
 import { formatBlogPosts } from "../../utils/utils";
 import SocialShare from "../../components/SocialShare.astro";
+import { getCollection, getEntry } from "astro:content";
 
 export async function getStaticPaths() {
   let posts = (await Astro.glob(
@@ -51,6 +52,9 @@ function shortenString(str, cutoff) {
   // Otherwise, return a shortened string with only as many words as the cutoff allows
   return words.slice(0, cutoff).join(" ") + "...";
 }
+
+// const { data: comments } = await getEntry("comments", "comments");
+// console.log(comments);
 ---
 
 <BlogLayout title={`${frontmatter.title} | ${frontmatter.author}`}>
@@ -63,7 +67,7 @@ function shortenString(str, cutoff) {
     canonicalUrl={`https://aadilmallickblog.tech/posts/${frontmatter.slug}`}
   />
   <article class="max-w-3xl mx-auto mt-48 sm:mt-32 mb-64" id="article">
-    <aside class="flex gap-4 items-center mb-14 flex-wrap" id="aside">
+    <aside class="flex gap-4 items-center flex-wrap mb-4" id="aside">
       <img
         src="/aadilbrickbg.jpg"
         alt="aadil mallick"
@@ -107,6 +111,8 @@ function shortenString(str, cutoff) {
       />
     </div>
     <Content />
+    <hr />
+
     <aside class="mt-4 bg-slate-100 py-8 px-4 rounded-lg shadow-lg">
       <!-- call to action: share article  -->
       <div
