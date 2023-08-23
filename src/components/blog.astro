@@ -1,7 +1,10 @@
 ---
+import { formatBlogPosts } from "../utils/utils";
 import { BlogPosts } from "./BlogPosts";
-let posts = await Astro.glob("../posts/**/*.{md,mdx}");
+let posts = (await Astro.glob("../posts/**/*.{md,mdx}")) as MarkdownPropsGlob[];
 posts = posts.filter((post) => post.frontmatter.draft !== true);
+
+posts = formatBlogPosts(posts, {});
 ---
 
 <section id="blog" class="mt-36 max-w-6xl mx-auto mb-36 px-4">

@@ -1,0 +1,63 @@
+---
+import { Icon } from "astro-icon";
+interface Props {
+  post: MarkdownPropsGlob;
+}
+
+const { post } = Astro.props;
+
+function createLinkedlnLink() {
+  return `https://www.linkedin.com/shareArticle?url=${`https://aadilmallickblog.tech/posts/${post.frontmatter.slug}`}&title=${
+    post.frontmatter.title
+  }`;
+}
+
+function createPinterestLink() {
+  return `https://www.pinterest.com/pin/create/button/?url=${`https://aadilmallickblog.tech/posts/${post.frontmatter.slug}`}&media=${
+    post.frontmatter.image.url
+  }&description=${post.frontmatter.description}`;
+}
+
+function createRedditLink() {
+  return `https://reddit.com/submit?url=${`https://aadilmallickblog.tech/posts/${post.frontmatter.slug}`}&title=${
+    post.frontmatter.title
+  }`;
+}
+
+const links = [
+  {
+    icon: "mdi:twitter",
+    url: `https://twitter.com/intent/tweet?url=${`https://aadilmallickblog.tech/posts/${post.frontmatter.slug}`}&text=${"Check out this neat article"}`,
+    color: "text-blue-400",
+  },
+  {
+    icon: "mdi:facebook-box",
+    url: `https://www.facebook.com/sharer/sharer.php?u=${`https://aadilmallickblog.tech/posts/${post.frontmatter.slug}`}`,
+    color: "text-blue-600",
+  },
+  {
+    icon: "mdi:linkedin",
+    url: createLinkedlnLink(),
+    color: "text-blue-800",
+  },
+  {
+    icon: "mdi:pinterest",
+    url: createPinterestLink(),
+    color: "text-red-500",
+  },
+];
+---
+
+<div class="flex space-x-4 justify-center sm:justify-start">
+  {
+    links.map((link) => (
+      <a
+        href={link.url}
+        class="block p-2 bg-white rounded-full border border-slate-200 shadow-xl hover:bg-slate-100 transition-colors"
+        target="_blank"
+      >
+        <Icon name={link.icon} class={link.color} height="24" width="24" />
+      </a>
+    ))
+  }
+</div>

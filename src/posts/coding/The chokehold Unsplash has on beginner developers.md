@@ -1,5 +1,5 @@
 ---
-title: Stop! Top 3 mistakes you make when learning to code
+title: The unbelievable chokehold Unsplash has on beginner developers
 slug: the-unsplash-chokehold
 excerpt: "Everywhere I go, I see his/her face..."
 date: 2023-08-22

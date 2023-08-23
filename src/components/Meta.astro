@@ -70,6 +70,13 @@ const scriptText = jsonLDGenerator({
   content={`${String(description).slice(0, 150)}...`}
 />
 <meta property="og:site_name" content="Aadil Mallick Blog" />
+
+<meta
+  property="article:published_time"
+  content={date ? String(new Date(date)) : String(Date.now())}
+/>
+<meta property="article:author" content="Aadil Mallick" />
+
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content={`${image}`} />
 

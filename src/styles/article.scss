@@ -7,6 +7,9 @@ $primary: #8138b7;
 #article {
   padding-left: 1rem;
   padding-right: 1rem;
+  span[aria-hidden="true"] {
+    display: none;
+  }
 }
 
 // typography

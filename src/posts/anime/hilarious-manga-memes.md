@@ -10,7 +10,6 @@ image:
   alt: "manga meme"
 tags: ["anime"]
 sub_tags: []
-draft: true
 ---
 
 No doubt you've seen some of these before on Twitter, but manga meme edits are a recently popular meme type where people edit the words a character says on a manga panel.

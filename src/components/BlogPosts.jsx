@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-
+import { formatDate } from "../utils/utils";
 export const BlogPosts = ({ posts }) => {
   const [tag, setTag] = useState("all");
   const [categoryPosts, setCategoryPosts] = useState(posts);
@@ -54,11 +54,16 @@ export const BlogPosts = ({ posts }) => {
 function BlogPost(props) {
   return (
     <div className="bg-slate-50 p-4 shadow-lg flex flex-col items-start">
-      <img
-        src={props.image.url}
-        alt={props.image.alt}
-        className="h-56 w-full rounded object-cover"
-      />
+      <div className="relative rounded overflow-hidden h-56 w-full">
+        <img
+          src={props.image.url}
+          alt={props.image.alt}
+          className="h-full w-full object-cover"
+        />
+        <p className="m-0 absolute p-1 bg-slate-200 rounded-tr-md bottom-0 left-[-2px] shadow-lg">
+          {formatDate(props.date)}
+        </p>
+      </div>
       <div className="flex bg-slate-200 self-stretch p-2 my-4 rounded-lg justify-between items-center flex-wrap px-4">
         <div className="flex space-x-2 items-center flex-wrap">
           {props.tags.map((tag) => (
