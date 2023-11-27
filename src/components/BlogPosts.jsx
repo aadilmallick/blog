@@ -1,6 +1,17 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { formatDate } from "../utils/utils";
 
+function debounce(fn, delay = 1000) {
+  let timer;
+  return () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, delay);
+  };
+}
+
 export const BlogPosts = ({ posts }) => {
   const [tag, setTag] = useState("all");
   const [categoryPosts, setCategoryPosts] = useState(posts);

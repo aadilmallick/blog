@@ -216,3 +216,25 @@ Whenever you are procrastinating on something, grab a pen and paper and do the f
 1. Precommit to your goals by holding yourself accountable publicly. If you want something more lowkey, write down "I will achieve x within the next 30 minutes". 
 2. Remove distractions by writing them down. During a work session, keep a piece of paper handy next to you and each time you become distracted, write down what distracted you. 
 	- You start to see the common distraction problems you have. 
+
+## Full money guide
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mdYXocVY3DY?si=yvnJoNeB57-trVNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+The **first step** is to have a good **money mindset**. Realize that true power comes when you don't *need* money. Money will never fix any of your real problems. 
+
+The **second step** is to discover your flow state activities. When you do these flow state activities, zero thoughts arise. These activities are advantageous because we naturally get good at our tasks when we enjoy them and are in flow. Then people pay us because we're so darn good at it. 
+
+Realize that the purpose of a company is not to make money, but it's supposed to be going somewhere. The only way you will make money is if you're not needy for money, just like how if you have a good life with good goals, a nice girlfriend is not the main attraction but just the icing on the cake. 
+
+The **third step** is to have this mindset that the purpose of a business is to have an impact on others, to help others. What is the impact you want? How is money your vehicle to achieve that? 
+- I want to make people happy and feel something ethereal when they listen to my music. I don't really need money for that, save for a couple of thousand of dollars. I only need to invest my time and heart. 
+
+
+
+
+
+
+
+
+
+
+

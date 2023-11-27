@@ -1,0 +1,2 @@
+
+Write something about how all the hate comments you see are the dumbest shit and you shouldn't take it to heart. Some people talk like they have 75 iq. When people leave hate comments, they have time to leave hate comments, which means they aren't doing anything productive with their life. 

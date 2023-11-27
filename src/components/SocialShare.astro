@@ -29,21 +29,25 @@ const links = [
     icon: "mdi:twitter",
     url: `https://twitter.com/intent/tweet?url=${`https://aadilmallickblog.tech/posts/${post.frontmatter.slug}`}&text=${"Check out this neat article"}`,
     color: "text-blue-400",
+    label: "Share on Twitter",
   },
   {
     icon: "mdi:facebook-box",
     url: `https://www.facebook.com/sharer/sharer.php?u=${`https://aadilmallickblog.tech/posts/${post.frontmatter.slug}`}`,
     color: "text-blue-600",
+    label: "Share on Facebook",
   },
   {
     icon: "mdi:linkedin",
     url: createLinkedlnLink(),
     color: "text-blue-800",
+    label: "Share on LinkedIn",
   },
   {
     icon: "mdi:pinterest",
     url: createPinterestLink(),
     color: "text-red-500",
+    label: "Share on Pinterest",
   },
 ];
 ---
@@ -55,6 +59,7 @@ const links = [
         href={link.url}
         class="block p-2 bg-white rounded-full border border-slate-200 shadow-xl hover:bg-slate-100 transition-colors"
         target="_blank"
+        aria-label={link.label}
       >
         <Icon name={link.icon} class={link.color} height="24" width="24" />
       </a>
