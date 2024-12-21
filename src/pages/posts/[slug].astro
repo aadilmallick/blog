@@ -111,18 +111,20 @@ function shortenString(str, cutoff) {
       />
     </div>
     <Content />
-    <hr />
+    <hr class="border-gray-400" />
 
-    <aside class="mt-4 bg-slate-100 py-8 px-4 rounded-lg shadow-lg">
+    <aside
+      class="mt-4 bg-slate-100 py-8 px-4 rounded-lg shadow-lg border-slate-300 border-2"
+    >
       <!-- call to action: share article  -->
       <div
-        class="flex items-center gap-8 flex-wrap justify-center md:justify-start"
+        class="flex items-start gap-8 flex-wrap justify-center md:justify-start"
       >
         <div class="flex gap-4 items-center">
           <img
             src="/aadilbrickbg.jpg"
             alt="aadil mallick"
-            class="h-16 w-16 rounded-full object-top m-0"
+            class="h-16 w-16 rounded-full object-top m-0 shadow-xl"
             height="64"
             width="64"
             loading="lazy"
@@ -151,12 +153,10 @@ function shortenString(str, cutoff) {
 
       <div class="border-b border-slate-400 my-6"></div>
       <div class="text-center sm:text-left">
-        <p
-          class="max-w-xs text-lg font-light tracking-wider uppercase m-0 mb-4"
-        >
+        <p class="max-w-xs text-lg font-light tracking-wider uppercase m-0">
           More Articles
         </p>
-        <div class="space-y-4">
+        <div class="space-y-4 mt-4">
           {
             postsToLinkTo
               .map((post) => (

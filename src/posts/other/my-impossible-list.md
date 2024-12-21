@@ -13,42 +13,37 @@ sub_tags: []
 draft: true
 ---
 
-Thomas Frank inspired me to write my own Impossible List, which is a list of all the goals you want to achieve in your life. 
+Thomas Frank inspired me to write my own Impossible List, which is a list of all the goals you want to achieve in your life.
 
-Here goes: 
+Here goes:
 
-## Life goals 
+## Life goals
 
 - [ ] Create an anime called Tomura
-- [ ] Write a book called Dream Warriors 
-	- [ ] Create an anime from it 
-- [ ] Write the second draft of The Dream 
-	- [ ] Publish The Dream 
-	- [ ] Create an anime from it 
+- [ ] Write a book called Dream Warriors
+  - [ ] Create an anime from it
+- [ ] Write the second draft of The Dream
+  - [ ] Publish The Dream
+  - [ ] Create an anime from it
 - [ ] Create a youtube channel called One Man Band
-	- [ ] Get 1,000,000 subscribers
+  - [ ] Get 1,000,000 subscribers
 
-## Fitness goals 
+## Fitness goals
 
-- [ ] Do 6 rounds of 3 minutes shadowboxing 
+- [ ] Do 6 rounds of 3 minutes shadowboxing
 - [ ] Do 20 pullups in a row
-	- [ ] Do 30 pullups in a row
-	- [ ] Do 40 pullups in a row
-- [ ] Do 50 pushups in a row 
+- [ ] Do 50 pushups in a row
 - [ ] Get a 6 minute mile
 - [ ] Get 6 pack
 
-## Coding goals 
+## Coding goals
 
 - [ ] Master threejs and recreate Bruno Simon's portfolio
 - [ ] Create neural network that can listen to any music and return an accurate piano or guitar transcription
 - [ ] Create a web development channel
 
-## Financial goals 
+## Financial goals
 
-- [ ] Make money with my blog 
+- [ ] Make money with my blog
 - [ ] Sell Udemy and Skillshare courses
-- [ ] Sell beats and lofi beats on Beatstar
-
-
-
+- [ ] Sell beats and lofi beats

@@ -104,6 +104,60 @@ $primary: #8138b7;
   a:hover {
     text-decoration: underline;
   }
+
+  .markdown-alert {
+    background-color: hsl(0, 0%, 85%);
+    border: 2px solid hsl(0, 0%, 65%);
+    padding: 0 0.75rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    .markdown-alert-title {
+      border-bottom: 2px solid hsl(0, 0%, 65%);
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .markdown-alert-note {
+    background-color: hsl(186, 77%, 47%);
+    color: hsl(186, 77%, 17%);
+    .markdown-alert-title {
+      border-bottom: 2px solid hsl(186, 77%, 37%);
+    }
+  }
+
+  .markdown-alert-important {
+    background-color: hsl(286, 77%, 77%);
+    color: hsl(286, 77%, 17%);
+    .markdown-alert-title {
+      border-bottom: 2px solid hsl(286, 77%, 37%);
+    }
+  }
+
+  .markdown-alert-tip {
+    background-color: hsl(133, 78%, 77%);
+    color: hsl(133, 77%, 17%);
+    .markdown-alert-title {
+      border-bottom: 2px solid hsl(133, 77%, 37%);
+    }
+  }
+
+  .markdown-alert-warning {
+    background-color: hsl(69, 78%, 77%);
+    color: hsl(69, 77%, 17%);
+    .markdown-alert-title {
+      border-bottom: 2px solid hsl(69, 77%, 37%);
+    }
+  }
+
+  .markdown-alert-caution {
+    background-color: hsl(0, 78%, 77%);
+    color: hsl(0, 77%, 17%);
+    .markdown-alert-title {
+      border-bottom: 2px solid hsl(0, 77%, 37%);
+    }
+  }
 }
 
 // typography

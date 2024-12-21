@@ -13,12 +13,16 @@ import sitemap from "@astrojs/sitemap";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import {
+  rehypeGithubAlerts,
+  IOptions as rehypeGithubAlertsOptionsType,
+} from "rehype-github-alerts";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react(), mdx(), sitemap()],
   site: "https://aadilmallickblog.tech/",
   markdown: {
     remarkPlugins: [remarkReadingTime, remarkMath],
-    rehypePlugins: [rehypeKatex],
+    rehypePlugins: [rehypeKatex, rehypeGithubAlerts],
   },
 });
