@@ -67,6 +67,7 @@ function shortenString(str, cutoff) {
     canonicalUrl={`https://aadilmallickblog.tech/posts/${frontmatter.slug}`}
   />
   <article class="max-w-3xl mx-auto mt-48 sm:mt-32 mb-64" id="article">
+    <!-- article header -->
     <aside class="flex gap-4 items-center flex-wrap mb-4" id="aside">
       <img
         src="/aadilbrickbg.jpg"
@@ -101,6 +102,7 @@ function shortenString(str, cutoff) {
     </aside>
     <SocialShare post={Astro.props.post} />
     <hr class="mb-14" />
+    <!-- article image -->
     <div>
       <h1>{frontmatter.title}</h1>
       <img
@@ -110,6 +112,12 @@ function shortenString(str, cutoff) {
         fetchpriority="high"
       />
     </div>
+    <!-- table of contents -->
+    <menu id="toc">
+      <h2 class="border-b-2 border-b-slate-400 pb-2 font-light">
+        Table of Contents
+      </h2>
+    </menu>
     <Content />
     <hr class="border-gray-400" />
 
@@ -193,4 +201,67 @@ function shortenString(str, cutoff) {
       url: url,
     });
   });
+</script>
+
+<script>
+  class DOM {
+    static createDomElement(html: string) {
+      const dom = new DOMParser().parseFromString(html, "text/html");
+      return dom.body.firstElementChild as HTMLElement;
+    }
+    static $ = (selector: string): HTMLElement | null =>
+      document.querySelector(selector) as HTMLElement | null;
+    static $$ = (selector: string): NodeListOf<HTMLElement> =>
+      document.querySelectorAll(selector);
+
+    static selectWithThrow = (selector: string): HTMLElement => {
+      const el = DOM.$(selector);
+      if (!el) {
+        throw new Error(`Element not found: ${selector}`);
+      }
+      return el;
+    };
+
+    static addElementsToContainer(
+      container: HTMLElement,
+      elements: HTMLElement[]
+    ) {
+      const fragment = document.createDocumentFragment();
+      elements.forEach((el) => fragment.appendChild(el));
+      container.appendChild(fragment);
+    }
+  }
+
+  function html(strings: TemplateStringsArray, ...values: any[]) {
+    let str = "";
+    strings.forEach((string, i) => {
+      str += string + (values[i] || "");
+    });
+    return str;
+  }
+
+  const headings = [...document.querySelectorAll("h2, h3, h4, h5, h6")];
+  const toc = document.getElementById("toc") as HTMLMenuElement;
+  const classes = [
+    "bg-slate-200",
+    "p-4",
+    "rounded-lg",
+    "shadow-lg",
+    "border-slate-300",
+    "border-2",
+    "my-4",
+  ];
+  toc.classList.add(...classes);
+  const headingsListElements = headings.map((heading) => {
+    const id = heading.id;
+    const text = heading.textContent;
+    const tag = heading.tagName;
+    const level = parseInt(tag.slice(1));
+    const link = html`<a href="#${id}" class="text-black">${text}</a>`;
+    const li = DOM.createDomElement(html`<li>${link}</li>`);
+    li.style.paddingLeft = `${level * 1 * 0.5}rem`;
+    li.style.fontSize = `${2 - level * 0.25}rem`;
+    return li;
+  });
+  DOM.addElementsToContainer(toc, headingsListElements);
 </script>

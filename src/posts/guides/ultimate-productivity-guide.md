@@ -83,6 +83,10 @@ It's also important to have consistency, but so what? Embrace the suck. Nothing 
 
 For this spirit, you should do stuff for x amount of reps before worrying about what to do next. For example, "I will not try to make money from my blog posts until I have written 50 of them."
 
+**Have a professional's mindset**
+
+Does a professional complain about all the work they have to do? No, they just do it. Adopt the same approach for your work. 
+
 **Visual reminder**
 
 When doing work, write on a sticky note what task your are doing and make it visible throughout the work session.
@@ -163,6 +167,17 @@ After each work session, follow these steps for random partial reinforcement tac
 
 This is the best way to reward yourself so that you find effort and goalseeking itself rewarding.
 
+### The Productivity Equation
+
+- **traction**: actions that move you towards your goals
+- **distraction**: actions that don't do anything to move you towards your goals
+
+> [!IMPORTANT] 
+> Productivity = Traction.
+
+Avoid distraction, only go after traction. For each action you do throughout the day, ask yourself, "is this traction or a distraction?"
+
+
 ## Deep work Routine
 
 1. When starting a deep work session, I will take out a piece of paper, and do the following:
@@ -189,3 +204,20 @@ To improve deep work focus after each session, we need to log our thoughts and h
 > The first step to fix anything is to recognize the problem exists. 
 
 
+## Become healthy with exercise
+
+### Avoiding temptations
+
+To avoid junk food temptations, stare at some junk food you really want to eat, and then don't eat it. Walk away, and you'll walk away stronger. 
+
+If that doesn't work, try naming your temptation: the next time an undesired impulse starts acting up, give it a name and talk back to it.
+
+
+> [!TIP] 
+> Have a sense of humor about this. If the little pastry lover inside you begins making demands, give it a funny name — like “Cookie Monster" — and tell it, politely, to take a hike.
+
+When you get hit with the urge to give in to a craving, do these steps:
+
+1. acknowledge that you crave this thing
+2. Focus on your attention on why you want to resist this thing, how resisting this thing will help you succeed in your long term goals.
+3. set a 10 minute timer before you are allowed to jump into your craving.

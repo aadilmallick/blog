@@ -4,10 +4,17 @@ $primary: #8138b7;
   background-image: url("../assets/background.jpg");
 }
 
+// #toc {
+//   --level: 1;
+//   li {
+//     padding-left: calc(0 + calc(var(--level) - 1)) + 1rem;
+//   }
+// }
+
 #article {
+  font-size: 18px;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 1.34rem;
   line-height: 1.6;
   span[aria-hidden="true"] {
     display: none;
@@ -173,6 +180,7 @@ $primary: #8138b7;
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
