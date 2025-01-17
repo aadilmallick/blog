@@ -89,6 +89,12 @@ $primary: #8138b7;
     }
   }
 
+  audio {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   blockquote ::first-letter {
     text-transform: uppercase;
   }

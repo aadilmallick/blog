@@ -61,6 +61,20 @@ Imagine if you got everything you ever wanted without any effort. How would you 
 
 The **Super Mario Effect** proves that the best way to learn something is to do it over and over again. The more repetitions you do, the better you'll be.
 
+**How to take notes**
+
+When writing down notes for a topic, make sure to write down these three questions and answer them: 
+
+- [ ] Why is this important?
+- [ ] How does this relate to other info?
+- [ ] How will I use this info?
+
+**How to learn**
+
+1. After learning a topic, implement it within 24 hours to learn it forever. 
+2. Keep a deep work journal
+3. Reward yourself for certain hours of deep work accomplished. 
+
 **Learning boring things**
 
 During a boring task, keep saying to yourself that you do it because you love it. Hard things are worthwhile. Tell yourself that because it is painful, you will feel better later and have a dopamine increase from this effort.
@@ -120,6 +134,17 @@ Do these tasks daily to improve focus:
 - [ ] 15 min NSDR
 - [ ] 5 min focus meditation
 
+**Improve your productivity: timelog technique**
+
+What isn't measured doesn't get improved. You need to run a timelog for at least a week to see where all your time goes. 
+
+When placing entries in your timelog, don't do them from start to finish, like 4:00 - 4:43. Instead just put down the time at which you started the activity.
+
+1. Conduct a timelog for the day
+2. Add the timelog to the excel sheet. 
+
+> "In my experience, most people are horribly disillusioned with where their time goes." - Scott Young
+
 ### Avoid Procrastination
 
 #mindset/procrastination
@@ -151,6 +176,21 @@ The perfect day is based on splitting it into three portions: morning, afternoon
 
 ### Motivate yourself to achieve your goals
 
+**principles**
+
+Do not create "fake somethings," which are distractions from doing the real thing that will lead you towards your goals. 
+
+>"Fill your days with enough fake activity, and you get into the situation where you fail to make meaningful progress on any of your goals, but still feel exhausted at the end of the day." - Scott Young
+
+ A meaningful life depends on doing real things.
+
+> "A life spent on real work may not always be the easiest or most entertaining, but it’s the one that adds up in the end." - Scott Young
+
+
+> [!IMPORTANT] 
+> **Actionable Tip**: For each action you do throughout the day, ask yourself this: “Am I doing the real thing?” If not, then stop doing the fake thing and start doing the real thing. 
+
+
 **Visualization**
 
 1. Ask yourself every morning if you are motivated to pursue your dreams
@@ -176,6 +216,8 @@ This is the best way to reward yourself so that you find effort and goalseeking 
 > Productivity = Traction.
 
 Avoid distraction, only go after traction. For each action you do throughout the day, ask yourself, "is this traction or a distraction?"
+
+> "Fake efforts become insidious when they feel like progress. When you’re using them to avoid doing the actual work, call them what they are—distractions." - Scott Young
 
 
 ## Deep work Routine
@@ -204,7 +246,11 @@ To improve deep work focus after each session, we need to log our thoughts and h
 > The first step to fix anything is to recognize the problem exists. 
 
 
-## Become healthy with exercise
+## Become healthy
+
+### Exercise breaks
+
+Exercise breaks like 100 jumping jacks, 25 pushups, 50 squats, and 10 pullups throughout the day are essential.
 
 ### Avoiding temptations
 

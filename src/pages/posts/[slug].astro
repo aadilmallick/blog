@@ -11,6 +11,11 @@ export async function getStaticPaths() {
   )) as MarkdownPropsGlob[];
 
   let postsToLinkTo = posts.filter((post) => post.frontmatter.draft !== true);
+  // console.log(
+  //   postsToLinkTo.find(
+  //     (post) => post.frontmatter.slug === "valencia-trip-180-days"
+  //   )
+  // );
 
   return posts.map((post) => {
     return {
@@ -264,4 +269,8 @@ function shortenString(str, cutoff) {
     return li;
   });
   DOM.addElementsToContainer(toc, headingsListElements);
+
+  DOM.$$("audio")?.forEach((audio: HTMLAudioElement) => {
+    audio.addEventListener("canplay", () => {});
+  });
 </script>
