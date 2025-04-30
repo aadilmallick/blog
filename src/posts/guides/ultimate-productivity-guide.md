@@ -9,8 +9,9 @@ image:
   url: https://miro.medium.com/v2/resize:fit:2400/1*-RA3zER-TLCWxUllb4H8LQ.jpeg
   alt: Dan Koe
 tags:
-  - "self improvement"
-sub_tags: []
+  - self
+  - improvement
+sub_tags: 
 draft: false
 ---
 
@@ -55,6 +56,10 @@ The only way to achieve a goal is through constant, relentless action. You don't
 
 Imagine if you got everything you ever wanted without any effort. How would you feel? Like you haven't earned it. We need to do the hard work so we can earn our goals, not be given them. Hard work is necessary
 
+### A quick quote
+
+>For the past 33 years, I have looked in the mirror every morning and asked myself: “If today were the last day of my life, would I want to do what I am about to do today?” And whenever the answer has been “No” for too many days in a row, I know I need to change something … almost everything—all external expectations, all pride, all fear of embarrassment or failure—these things just fall away in the face of death, leaving only what is truly important. Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. *- Steve Jobs*
+
 ## Principles of Learning
 
 **Put in the reps**
@@ -86,6 +91,14 @@ Learning compounds over time - keep in mind the rule of 2:
 - **2 year rule** : If you stick to something for 2 years, no matter what, doing it consistently, you WILL BECOME GOOD AT IT.
 - **2 day rule**: Never miss 2 days in a row
 - **2 minute rule** : If procrastinating on something, only do it for 2 minutes. It only takes 2 minutes to see meaningful progress. 
+
+**Rule of 2-7-30**
+
+This rule uses spaced-repetition principles to ensure you commit any topic to your long term memory. 
+
+1. Review a topic after 2 days
+2. Review a topic after 7 days
+3. Review a topic after 30 days
 
 **Have consistency**
 
