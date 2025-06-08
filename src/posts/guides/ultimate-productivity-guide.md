@@ -9,9 +9,8 @@ image:
   url: https://miro.medium.com/v2/resize:fit:2400/1*-RA3zER-TLCWxUllb4H8LQ.jpeg
   alt: Dan Koe
 tags:
-  - self
-  - improvement
-sub_tags: 
+  - "self improvement"
+sub_tags:
 draft: false
 ---
 
@@ -27,13 +26,13 @@ When making goals, they have to have these three attributes:
 
 When trying to accomplish a dream, you need to make a roadmap of it first. Break each dream into several subgoals, and put a timeframe on each subgoal. An ambition with a schedule is just a dream. Put a schedule on it, and it becomes something tangible - a goal.
 
-The biggest hurdle in your journey of productivity and goal seeking is doing stuff that doesn't improve your life, like YouTube and Netflix. 
+The biggest hurdle in your journey of productivity and goal seeking is doing stuff that doesn't improve your life, like YouTube and Netflix.
 
 This is some good info you can use to understand why we should chase our goals instead of pleasure:
 
-- Science shows that after 30 minutes of passive leisure, we become more depressed than before. After 30 minutes, all entertainment loses its value. 
-- When faced with a hard choice and an easy choice, always take the hard choice. Facing our fears makes us mentally stronger. 
-- Anything worth it in life will always take hard work, hard work we don't want to do because we're wired to like the easy stuff. Don't be like that. Rise above and do the hard things where other people won't. 
+- Science shows that after 30 minutes of passive leisure, we become more depressed than before. After 30 minutes, all entertainment loses its value.
+- When faced with a hard choice and an easy choice, always take the hard choice. Facing our fears makes us mentally stronger.
+- Anything worth it in life will always take hard work, hard work we don't want to do because we're wired to like the easy stuff. Don't be like that. Rise above and do the hard things where other people won't.
 - Remember that each time you indulge in these activities, you are taking away from your future self's happiness. Each of these vices is nothing more than trying to escape emotional pain.
 
 ### Why You Should Do The Work
@@ -58,7 +57,7 @@ Imagine if you got everything you ever wanted without any effort. How would you 
 
 ### A quick quote
 
->For the past 33 years, I have looked in the mirror every morning and asked myself: “If today were the last day of my life, would I want to do what I am about to do today?” And whenever the answer has been “No” for too many days in a row, I know I need to change something … almost everything—all external expectations, all pride, all fear of embarrassment or failure—these things just fall away in the face of death, leaving only what is truly important. Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. *- Steve Jobs*
+> For the past 33 years, I have looked in the mirror every morning and asked myself: “If today were the last day of my life, would I want to do what I am about to do today?” And whenever the answer has been “No” for too many days in a row, I know I need to change something … almost everything—all external expectations, all pride, all fear of embarrassment or failure—these things just fall away in the face of death, leaving only what is truly important. Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. _- Steve Jobs_
 
 ## Principles of Learning
 
@@ -68,7 +67,7 @@ The **Super Mario Effect** proves that the best way to learn something is to do 
 
 **How to take notes**
 
-When writing down notes for a topic, make sure to write down these three questions and answer them: 
+When writing down notes for a topic, make sure to write down these three questions and answer them:
 
 - [ ] Why is this important?
 - [ ] How does this relate to other info?
@@ -76,9 +75,9 @@ When writing down notes for a topic, make sure to write down these three questio
 
 **How to learn**
 
-1. After learning a topic, implement it within 24 hours to learn it forever. 
+1. After learning a topic, implement it within 24 hours to learn it forever.
 2. Keep a deep work journal
-3. Reward yourself for certain hours of deep work accomplished. 
+3. Reward yourself for certain hours of deep work accomplished.
 
 **Learning boring things**
 
@@ -90,11 +89,11 @@ Learning compounds over time - keep in mind the rule of 2:
 
 - **2 year rule** : If you stick to something for 2 years, no matter what, doing it consistently, you WILL BECOME GOOD AT IT.
 - **2 day rule**: Never miss 2 days in a row
-- **2 minute rule** : If procrastinating on something, only do it for 2 minutes. It only takes 2 minutes to see meaningful progress. 
+- **2 minute rule** : If procrastinating on something, only do it for 2 minutes. It only takes 2 minutes to see meaningful progress.
 
 **Rule of 2-7-30**
 
-This rule uses spaced-repetition principles to ensure you commit any topic to your long term memory. 
+This rule uses spaced-repetition principles to ensure you commit any topic to your long term memory.
 
 1. Review a topic after 2 days
 2. Review a topic after 7 days
@@ -102,17 +101,17 @@ This rule uses spaced-repetition principles to ensure you commit any topic to yo
 
 **Have consistency**
 
-It's also important to have consistency, but so what? Embrace the suck. Nothing worth having is easy. 
+It's also important to have consistency, but so what? Embrace the suck. Nothing worth having is easy.
 
->Amateurs sit and wait for inspiration. The rest of us just get up and work - Stephen King
+> Amateurs sit and wait for inspiration. The rest of us just get up and work - Stephen King
 
->It's not always fun. But if you want to be good at something, you have to do it even when it's not fun. - Flea
+> It's not always fun. But if you want to be good at something, you have to do it even when it's not fun. - Flea
 
 For this spirit, you should do stuff for x amount of reps before worrying about what to do next. For example, "I will not try to make money from my blog posts until I have written 50 of them."
 
 **Have a professional's mindset**
 
-Does a professional complain about all the work they have to do? No, they just do it. Adopt the same approach for your work. 
+Does a professional complain about all the work they have to do? No, they just do it. Adopt the same approach for your work.
 
 **Visual reminder**
 
@@ -137,8 +136,8 @@ In between work bouts, take a short exercise break of 100 jumping jacks, 25 push
 You'll know you're being productive if the answer to all of these three questions is yes:
 
 - [ ] are you proud of your recent efforts? Not achievements, but the hours you are putting in?
-- [ ] are you grateful? 
-- [ ] are you excited for something coming up? 
+- [ ] are you grateful?
+- [ ] are you excited for something coming up?
 
 **Improve focus**
 
@@ -149,12 +148,12 @@ Do these tasks daily to improve focus:
 
 **Improve your productivity: timelog technique**
 
-What isn't measured doesn't get improved. You need to run a timelog for at least a week to see where all your time goes. 
+What isn't measured doesn't get improved. You need to run a timelog for at least a week to see where all your time goes.
 
 When placing entries in your timelog, don't do them from start to finish, like 4:00 - 4:43. Instead just put down the time at which you started the activity.
 
 1. Conduct a timelog for the day
-2. Add the timelog to the excel sheet. 
+2. Add the timelog to the excel sheet.
 
 > "In my experience, most people are horribly disillusioned with where their time goes." - Scott Young
 
@@ -191,18 +190,16 @@ The perfect day is based on splitting it into three portions: morning, afternoon
 
 **principles**
 
-Do not create "fake somethings," which are distractions from doing the real thing that will lead you towards your goals. 
+Do not create "fake somethings," which are distractions from doing the real thing that will lead you towards your goals.
 
->"Fill your days with enough fake activity, and you get into the situation where you fail to make meaningful progress on any of your goals, but still feel exhausted at the end of the day." - Scott Young
+> "Fill your days with enough fake activity, and you get into the situation where you fail to make meaningful progress on any of your goals, but still feel exhausted at the end of the day." - Scott Young
 
- A meaningful life depends on doing real things.
+A meaningful life depends on doing real things.
 
 > "A life spent on real work may not always be the easiest or most entertaining, but it’s the one that adds up in the end." - Scott Young
 
-
-> [!IMPORTANT] 
-> **Actionable Tip**: For each action you do throughout the day, ask yourself this: “Am I doing the real thing?” If not, then stop doing the fake thing and start doing the real thing. 
-
+> [!IMPORTANT]
+> **Actionable Tip**: For each action you do throughout the day, ask yourself this: “Am I doing the real thing?” If not, then stop doing the fake thing and start doing the real thing.
 
 **Visualization**
 
@@ -215,8 +212,8 @@ Do not create "fake somethings," which are distractions from doing the real thin
 After each work session, follow these steps for random partial reinforcement tactics:
 
 1. Flip a coin
-    - If _heads_, set a timer for 1 minutes and say “I’m making progress” repeatedly.
-    - If _tails_, don’t do anything and just move onto the next task of the day.
+   - If _heads_, set a timer for 1 minutes and say “I’m making progress” repeatedly.
+   - If _tails_, don’t do anything and just move onto the next task of the day.
 
 This is the best way to reward yourself so that you find effort and goalseeking itself rewarding.
 
@@ -225,13 +222,12 @@ This is the best way to reward yourself so that you find effort and goalseeking 
 - **traction**: actions that move you towards your goals
 - **distraction**: actions that don't do anything to move you towards your goals
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Productivity = Traction.
 
 Avoid distraction, only go after traction. For each action you do throughout the day, ask yourself, "is this traction or a distraction?"
 
 > "Fake efforts become insidious when they feel like progress. When you’re using them to avoid doing the actual work, call them what they are—distractions." - Scott Young
-
 
 ## Deep work Routine
 
@@ -254,10 +250,8 @@ Avoid distraction, only go after traction. For each action you do throughout the
 
 To improve deep work focus after each session, we need to log our thoughts and how we are using out time. Each time you get lost in thought, write those thoughts down and label them as "helpful" or "unhelpful".
 
-
-> [!TIP] 
-> The first step to fix anything is to recognize the problem exists. 
-
+> [!TIP]
+> The first step to fix anything is to recognize the problem exists.
 
 ## Become healthy
 
@@ -267,12 +261,11 @@ Exercise breaks like 100 jumping jacks, 25 pushups, 50 squats, and 10 pullups th
 
 ### Avoiding temptations
 
-To avoid junk food temptations, stare at some junk food you really want to eat, and then don't eat it. Walk away, and you'll walk away stronger. 
+To avoid junk food temptations, stare at some junk food you really want to eat, and then don't eat it. Walk away, and you'll walk away stronger.
 
 If that doesn't work, try naming your temptation: the next time an undesired impulse starts acting up, give it a name and talk back to it.
 
-
-> [!TIP] 
+> [!TIP]
 > Have a sense of humor about this. If the little pastry lover inside you begins making demands, give it a funny name — like “Cookie Monster" — and tell it, politely, to take a hike.
 
 When you get hit with the urge to give in to a craving, do these steps:

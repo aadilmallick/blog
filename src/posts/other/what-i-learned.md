@@ -11,7 +11,7 @@ image:
 tags:
   - personal
 sub_tags: 
-draft: false
+draft: true
 ---
 ## The philosophy
 

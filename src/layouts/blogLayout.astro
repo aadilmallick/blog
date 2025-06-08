@@ -24,23 +24,27 @@ const { title = "Blog" }: Props = Astro.props;
   <body>
     <header
       id="hero"
-      class="w-screen h-36 sm:h-20 bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100 fixed z-10 top-0 left-0 shadow-lg"
+      class="w-screen h-32 sm:h-16 bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100 fixed z-10 top-0 left-0 shadow-lg"
     >
       <nav
         class="max-w-6xl mx-auto h-full flex justify-between items-center p-2 flex-col sm:flex-row"
       >
-        <div class="w-16 h-16">
-          <img src={Logo} alt="" class="w-full h-full object-cover m-0" />
-        </div>
+        <a href="/" class="block cursor-pointer">
+          <div class="w-12 h-12">
+            <img src={Logo} alt="" class="w-full h-full object-cover m-0" />
+          </div>
+        </a>
         <div class="flex space-x-4 text-white text-xl">
           <a
             href="https://aadilmallick.com/about.html"
-            class="inline-block p-2 hover:animate-pulse">About</a
+            class="inline-block p-2 hover:animate-pulse text-base">About</a
           >
-          <a href="/" class="inline-block p-2 hover:animate-pulse">Blog</a>
+          <a href="/" class="inline-block p-2 hover:animate-pulse text-base"
+            >Blog</a
+          >
           <a
             href="https://aadilmallick.com/work.html"
-            class="inline-block bg-fuchsia-800 opacity-70 px-8 py-2 rounded-2xl text-fuchsia-200"
+            class="inline-block bg-fuchsia-800 text-base opacity-70 px-4 py-2 rounded-2xl text-fuchsia-200"
             >Portfolio</a
           >
         </div>

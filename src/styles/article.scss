@@ -133,7 +133,7 @@ $primary: #8138b7;
   }
 
   .markdown-alert-note {
-    background-color: hsl(186, 77%, 47%);
+    background-color: hsl(186, 57%, 77%);
     color: hsl(186, 77%, 17%);
     .markdown-alert-title {
       border-bottom: 2px solid hsl(186, 77%, 37%);
@@ -141,7 +141,7 @@ $primary: #8138b7;
   }
 
   .markdown-alert-important {
-    background-color: hsl(286, 77%, 77%);
+    background-color: hsl(286, 57%, 77%);
     color: hsl(286, 77%, 17%);
     .markdown-alert-title {
       border-bottom: 2px solid hsl(286, 77%, 37%);
@@ -149,7 +149,7 @@ $primary: #8138b7;
   }
 
   .markdown-alert-tip {
-    background-color: hsl(133, 78%, 77%);
+    background-color: hsl(133, 58%, 77%);
     color: hsl(133, 77%, 17%);
     .markdown-alert-title {
       border-bottom: 2px solid hsl(133, 77%, 37%);
@@ -157,7 +157,7 @@ $primary: #8138b7;
   }
 
   .markdown-alert-warning {
-    background-color: hsl(69, 78%, 77%);
+    background-color: hsl(69, 58%, 77%);
     color: hsl(69, 77%, 17%);
     .markdown-alert-title {
       border-bottom: 2px solid hsl(69, 77%, 37%);
@@ -165,7 +165,7 @@ $primary: #8138b7;
   }
 
   .markdown-alert-caution {
-    background-color: hsl(0, 78%, 77%);
+    background-color: hsl(0, 58%, 77%);
     color: hsl(0, 77%, 17%);
     .markdown-alert-title {
       border-bottom: 2px solid hsl(0, 77%, 37%);
@@ -242,5 +242,18 @@ hr {
     h4 {
       font-size: 1.25rem;
     }
+  }
+}
+
+$mymap: (
+  8: 8rem,
+  12: 12rem,
+);
+
+// Generate grid classes based on the map
+@each $key, $value in $mymap {
+  .grid-#{$key}-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
   }
 }

@@ -9,9 +9,9 @@ image:
   url: https://miro.medium.com/v2/resize:fit:2400/1*-RA3zER-TLCWxUllb4H8LQ.jpeg
   alt: Dan Koe
 tags:
-  - self
-  - improvement
-sub_tags: 
+  - "self improvement"
+sub_tags:
 draft: true
 ---
+
 ## Principles
