@@ -14,6 +14,8 @@ sub_tags:
 draft: false
 ---
 
+<audio crossorigin src="https://7sbmvt2s2b.ufs.sh/f/N3W806fRonqM9Z0Ah68Xj5ghx3kwiHR2K4epnIfzZSFTaMQY" controls preload="metadata"></audio>
+
 ## Self Discipline
 
 Self-discipline is about making a mindset shift - it makes you a better person. It's about doing the right thing, the responsible thing, even if you don't want to.
@@ -24,7 +26,7 @@ When making goals, they have to have these three attributes:
 2. Have a timeframe
 3. Move you forward
 
-When trying to accomplish a dream, you need to make a roadmap of it first. Break each dream into several subgoals, and put a timeframe on each subgoal. An ambition with a schedule is just a dream. Put a schedule on it, and it becomes something tangible - a goal.
+When trying to accomplish a dream, you need to make a roadmap of it first. Break each dream into several subgoals, and put a timeframe on each subgoal. An ambition without a schedule is just a dream. Put a schedule on it, and it becomes something tangible - a goal.
 
 The biggest hurdle in your journey of productivity and goal seeking is doing stuff that doesn't improve your life, like YouTube and Netflix.
 
@@ -39,11 +41,13 @@ This is some good info you can use to understand why we should chase our goals i
 
 We feel terrible when we don’t make progress towards our goals. If we didn’t have stimulants all around us, we would feel terrible one minute into boredom.
 
-You will feel happy when you are making good progress towards your goals. When you make progress towards your goals, every step of the way, you feel good. If you’re not happy, you haven’t made enough progress to your goals.
+You will feel happy when you are making good progress towards your goals. When you make progress towards your goals, every step of the way, you feel good. **If you’re not happy, you haven’t made enough progress to your goals.**
 
 When faced with a hard choice and an easy choice, always take the hard choice. Facing our fears makes us mentally stronger. Anything worth it in life will always take hard work, hard work we don't want to do because we're wired to like the easy stuff. Don't be like that. Rise above and do the hard things where other people won't.
 
 No one is coming to save you, to stop you from watching YouTube and to make you get up and put work into your goals. Nobody. Only you can save yourself. So whenever you don't feel like doing work, remember that nobody else will tell you to work. Only you can. So get up and do it.
+
+**skill acquisition**
 
 Skill acquisition is the way to level up in the game of life.
 
@@ -53,7 +57,7 @@ Yes, goals and habits may be boring, but these boring habits are good for you. N
 
 The only way to achieve a goal is through constant, relentless action. You don't achieve a goal by only doing it when you feel like it.
 
-Imagine if you got everything you ever wanted without any effort. How would you feel? Like you haven't earned it. We need to do the hard work so we can earn our goals, not be given them. Hard work is necessary
+Imagine if you got everything you ever wanted without any effort. How would you feel? Like you haven't earned it. We need to do the hard work so we can earn our goals, not be given them. Hard work is necessary.
 
 ### A quick quote
 
@@ -116,6 +120,14 @@ Does a professional complain about all the work they have to do? No, they just d
 **Visual reminder**
 
 When doing work, write on a sticky note what task your are doing and make it visible throughout the work session.
+
+**Move the needle**
+
+You need to do the minimum amount of stuff everyday to move the needle for a certain topic. Moving the needle makes you feel as if you are actually making progress instead of stagnating. That's the feeling we want to chase - the feeling that our actions actually matter.
+
+Want to get better at running? Running 25 yards does nothing, but running half a mile sure moves the needle.
+
+Want to get better at a language? One duolingo lesson does nothing. 30 minutes a day moves the needle.
 
 **What would your future self want?**
 
@@ -198,8 +210,7 @@ A meaningful life depends on doing real things.
 
 > "A life spent on real work may not always be the easiest or most entertaining, but it’s the one that adds up in the end." - Scott Young
 
-> [!IMPORTANT]
-> **Actionable Tip**: For each action you do throughout the day, ask yourself this: “Am I doing the real thing?” If not, then stop doing the fake thing and start doing the real thing.
+> [!IMPORTANT] > **Actionable Tip**: For each action you do throughout the day, ask yourself this: “Am I doing the real thing?” If not, then stop doing the fake thing and start doing the real thing.
 
 **Visualization**
 
@@ -241,7 +252,7 @@ Avoid distraction, only go after traction. For each action you do throughout the
 4. When finishing a deep work session, I will do the following:
    - [ ] I will log the hours into the [deep work google sheets tracker](https://docs.google.com/spreadsheets/d/13GpbGQ1a-En38UF8jTYWgXUnTVotEOYnLvjW6eC-5xg/edit#gid=0)
    - [ ] I will log my hours into [10,000 hours](https://new10000hoursjourney.netlify.app/)
-5. Deep work break: either go into nature for 15 minutes or meditate.
+5. Deep work break: either go into nature for 15 minutes, do some exercise, or meditate.
 
 > [!CAUTION]
 > When encountering frustrations, work past them. Tell yourself that frustrations are a sign of neuroplasticity and that your brain is learning.

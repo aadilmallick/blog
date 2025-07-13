@@ -46,4 +46,3 @@ Here goes:
 
 - [ ] Make money with my blog
 - [ ] Sell Udemy and Skillshare courses
-- [ ] Sell beats and lofi beats

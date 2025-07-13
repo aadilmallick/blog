@@ -34,3 +34,26 @@ draft: true
 	2. Buddhism
 	3. Seerah
 
+## June
+
+It's ok to talk to yourself in the mirror and realize you don;t like what you see. take action to change that.
+
+>Those odds stacked against you will become a damn runway! There is no more time to waste. Hours and days evaporate like creeks in the desert. That’s why it’s okay to be cruel to yourself as long as you realize you’re doing it to become better. We all need thicker skin to improve in life. Being soft when you look in the mirror isn’t going to inspire the wholesale changes we need to shift our present and open up our future
+
+Do not become the average man, slowly wasting his life away by taking the path of least resistance.
+
+>Just another zombie selling his time on earth, going through the motions
+
+>What the fuck? I mean, seriously, what the fucking fuck? When was enough truly going to be enough? Was I willing to let my sorry present become a fucked-up future? How much longer would I wait, how many more years would I burn, wondering if there was some greater purpose out there waiting for me? I knew right then that if I didn’t make a stand and start walking the path of most resistance, I would end up in this mental hell forever.
+
+All bad things end. You need to realize that all bad things will eventually end, so even if you find yourselfi the worst situation possible, you can still visualize the end and look forward to that.
+
+>Everything in life is a mind game! Whenever we get swept under by life’s dramas, large and small, we are forgetting that no matter how bad the pain gets, no matter how harrowing the torture, all bad things end.
+
+>And never forget that all emotional and physical anguish is finite! It all ends eventually. Smile at pain and watch it fade for at least a second or two. If you can do that, you can string those seconds together and last longer than your opponent thinks you can, and that may be enough to catch a second wind.
+
+Rather than look at all the misfortunes in your life as bad, look at them as learning xperiences, like a training ground for life
+
+its okay to fail, but not ok to give up.
+
+>I’d be trapped in the knowing that I didn’t stay in the fight to the bitter end. There is no shame in getting knocked out. The shame comes when you throw in the motherfucking towel, and if I was born to suffer, then I may as well take my medicine.
