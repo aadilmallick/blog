@@ -105,7 +105,10 @@ function shortenString(str, cutoff) {
         {frontmatter.minutesRead}
       </p>
     </aside>
-    <SocialShare post={Astro.props.post} />
+    <div class="flex items-center gap-x-4">
+      <SocialShare post={Astro.props.post} />
+      <button id="copy-button" class="bg-black text-white font-semibold text-base tracking-wide py-2 px-4 rounded-lg hover:bg-slate-200 hover:text-black transition duration-200 ease-in-out border border-black">Copy</button>
+    </div>
     <hr class="mb-14" />
     <!-- article image -->
     <div>
@@ -198,6 +201,26 @@ function shortenString(str, cutoff) {
   }}
 >
   const shareBtn = document.querySelector("#share");
+  const copyBtn = document.querySelector("#copy-button");
+
+  copyBtn.addEventListener("click", async () => {
+    const articleText = document.querySelector("#article") as HTMLElement | null;
+    if (articleText) {
+      try {
+        await navigator.clipboard.writeText(articleText.innerText);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => {
+          copyBtn.textContent = "Copy";
+        }, 2000);
+      } catch (err) {
+        console.error("Failed to copy article text: ", err);
+        copyBtn.textContent = "Error";
+        setTimeout(() => {
+          copyBtn.textContent = "Copy";
+        }, 2000);
+      }
+    }
+  });
 
   shareBtn.addEventListener("click", () => {
     navigator.share({
