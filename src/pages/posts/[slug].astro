@@ -198,36 +198,26 @@ function shortenString(str, cutoff) {
     url: `https://aadilmallickblog.tech/posts/${frontmatter.slug}`,
     title: frontmatter.title,
     text: `Article by Aadil Mallick: ${frontmatter.description}`,
-    rawContent: Astro.props.post.rawContent(),
   }}
 >
   const shareBtn = document.querySelector("#share");
   const copyBtn = document.querySelector("#copy-button");
 
   copyBtn.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(rawContent);
-      copyBtn.textContent = "Copied!";
-      setTimeout(() => {
-        copyBtn.textContent = "Copy";
-      }, 2000);
-    } catch (err) {
-      console.error("Failed to copy markdown: ", err);
-      const articleText = document.querySelector("#article") as HTMLElement | null;
-      if (articleText) {
-        try {
-          await navigator.clipboard.writeText(articleText.innerText);
-          copyBtn.textContent = "Copied!";
-          setTimeout(() => {
-            copyBtn.textContent = "Copy";
-          }, 2000);
-        } catch (err2) {
-          console.error("Failed to copy article text: ", err2);
-          copyBtn.textContent = "Error";
-          setTimeout(() => {
-            copyBtn.textContent = "Copy";
-          }, 2000);
-        }
+    const articleText = document.querySelector("#article") as HTMLElement | null;
+    if (articleText) {
+      try {
+        await navigator.clipboard.writeText(articleText.innerText);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => {
+          copyBtn.textContent = "Copy";
+        }, 2000);
+      } catch (err) {
+        console.error("Failed to copy article text: ", err);
+        copyBtn.textContent = "Error";
+        setTimeout(() => {
+          copyBtn.textContent = "Copy";
+        }, 2000);
       }
     }
   });
