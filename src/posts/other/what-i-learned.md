@@ -11,7 +11,7 @@ image:
 tags:
   - personal
 sub_tags: 
-draft: true
+draft: false
 ---
 ## The philosophy
 
@@ -26,7 +26,6 @@ draft: true
 	2. Chicken does not cook in soup. You need to thoroughly cook stuff like chicken and onions before you put it into soup. 
 	3. Christopher Columbus was not a "lucky idiot." What he did with limited technology actually required a lot of skill
 - **three questions about the world:**
-	1. How can you prove Christianity is correct over Islam? What proof is there that Jesus is God and that the belief in the Trinity somehow isn't the most confusing thing ever?
 	2. What did trade look like back in history? How great was it?
 	3. How did organic life form from inorganic nonlife?
 - **three things I want to understand more:**
@@ -57,3 +56,11 @@ Rather than look at all the misfortunes in your life as bad, look at them as lea
 its okay to fail, but not ok to give up.
 
 >I’d be trapped in the knowing that I didn’t stay in the fight to the bitter end. There is no shame in getting knocked out. The shame comes when you throw in the motherfucking towel, and if I was born to suffer, then I may as well take my medicine.
+
+## January 2026
+
+**1/23/2026**
+
+Whoops, I fell off hard. But here are three things I learned:
+
+1. Use `pbpaste` on MacOs to read the clipboard content in terminal, and you can pipe that to other commands
