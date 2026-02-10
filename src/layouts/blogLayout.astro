@@ -20,6 +20,8 @@ const { title = "Blog" }: Props = Astro.props;
 
     <slot name="meta" />
     <title>{title}</title>
+    <!-- <script is:inline async src="//s.imgur.com/min/embed.js" charset="utf-8"
+    ></script> -->
   </head>
   <body>
     <header
@@ -76,8 +78,7 @@ const { title = "Blog" }: Props = Astro.props;
   window.addEventListener("scroll", () => {
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
     scrollPosition = scrollTop;
-    const readingTime =
-      scrollPosition / (scrollHeight - clientHeight);
+    const readingTime = scrollPosition / (scrollHeight - clientHeight);
     readingTimeScroll.style.transform = `scaleX(${readingTime})`;
   });
 </script>
