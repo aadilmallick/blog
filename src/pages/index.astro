@@ -1,43 +1,315 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
 import Logo from "../assets/logo-white.png";
-import Blog from "../components/blog.astro";
-// TODO: HTML SEO, Add footer,
+import Globe from "../components/Globe.astro";
+import { formatBlogPosts, formatDate } from "../utils/utils";
+
+// Fetch posts using Astro.glob
+let posts = (await Astro.glob("../posts/**/*.{md,mdx}")) as MarkdownPropsGlob[];
+
+// Filter out drafts and future posts
+posts = posts.filter((post) => post.frontmatter.draft !== true);
+
+// Sort posts by date using formatBlogPosts helper
+posts = formatBlogPosts(posts, {
+  filterOutDrafts: true,
+  filterOutFuturePosts: true,
+  sortByDate: true,
+});
+
+// Take the latest 6 posts for a comprehensive Neo-Brutalist grid
+const latestPosts = posts.slice(0, 6);
 ---
 
-<MainLayout>
-  <header
-    id="hero"
-    class="hero w-screen h-[20vh] sm:h-[50vh] bg-no-repeat bg-bottom bg-cover bg-blend-multiply bg-fuchsia-100"
-  >
-    <nav
-      class="max-w-6xl mx-auto h-20 flex justify-between items-center sm:p-4 flex-col md:flex-row"
-    >
-      <div class="w-16 h-full">
-        <img src={Logo} alt="" class="w-full h-full" />
+<MainLayout title="Aadil Mallick Blog | Home">
+  <!-- Top Navigation (Sticky) -->
+  <header class="sticky top-0 z-50 w-full bg-[#0a0a0a]/90 backdrop-blur-md border-b border-[#27272a] transition-all duration-300">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg overflow-hidden border border-[#27272a] bg-[#171717] p-1 flex items-center justify-center transition-transform group-hover:rotate-6">
+          <img src={Logo} alt="Logo" class="w-full h-full object-contain" />
+        </div>
+        <span class="text-xl font-black tracking-tighter text-[#fafafa] hover:text-[#c026d3] transition-colors">
+          AADIL MALLICK
+        </span>
+      </a>
+
+      <div class="flex items-center gap-6 text-[#a1a1aa] font-medium text-sm md:text-base">
+        <a href="https://aadilmallick.com/about.html" class="hover:text-[#c026d3] transition-colors">About</a>
+        <a href="/" class="text-[#fafafa] hover:text-[#c026d3] transition-colors">Blog</a>
+        <a href="https://aadilmallick.com/work.html" class="hover:text-[#c026d3] transition-colors">Portfolio</a>
       </div>
-      <div class="flex space-x-4 text-white text-xl">
-        <a
-          href="https://aadilmallick.com/about.html"
-          class="inline-block p-2 hover:animate-pulse">About</a
-        >
-        <a href="/" class="inline-block p-2 hover:animate-pulse">Blog</a>
-        <a
-          href="https://aadilmallick.com/work.html"
-          class="inline-block bg-fuchsia-800 opacity-70 px-8 py-2 rounded-2xl text-fuchsia-200"
-          >Portfolio</a
-        >
-      </div>
+
+      <button id="nav-subscribe-btn" class="bg-[#c026d3] text-white rounded-full px-6 py-2 font-bold border-2 border-white/10 hover:shadow-[4px_4px_0px_0px_rgba(34,211,238,0.6)] hover:-translate-y-0.5 active:translate-y-0 active:shadow-none transition-all duration-200">
+        Subscribe
+      </button>
     </nav>
   </header>
-  <Blog />
-  <footer class="bg-fuchsia-800 text-white text-center py-8">
-    <p class="text-xl">© 2021 Aadil Mallick</p>
+
+  <main class="bg-[#0a0a0a] text-[#fafafa] min-h-screen">
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16 md:py-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center overflow-hidden">
+      <!-- Left Column -->
+      <div class="lg:col-span-7 space-y-6 animate-slideInLeft select-none">
+        <div>
+          <span class="inline-block bg-[#22d3ee] text-[#0a0a0a] text-xs font-black tracking-widest px-3 py-1 rounded-full uppercase border border-black mb-4">
+            BLOG
+          </span>
+        </div>
+        <h1 class="text-5xl md:text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] font-black tracking-tight text-[#fafafa]">
+          Exploring the <br class="hidden md:inline" />
+          <span class="text-[#c026d3]">Frontier</span> of <br class="hidden md:inline" />
+          Web & Code.
+        </h1>
+        <p class="text-lg md:text-xl text-[#a1a1aa] leading-relaxed max-w-xl">
+          A high-performance technical blog mapping the future of software, neo-brutalist design patterns, and creative interactive graphics.
+        </p>
+        <div class="pt-4 flex flex-wrap gap-4">
+          <a href="#latest-thoughts" class="bg-[#c026d3] text-white rounded-full px-8 py-3 font-bold border-2 border-white/10 hover:shadow-[6px_6px_0px_0px_rgba(34,211,238,0.7)] hover:-translate-y-1 transition-all duration-200 inline-block">
+            Read Articles
+          </a>
+          <button id="hero-subscribe-btn" class="bg-[#171717] text-[#fafafa] rounded-full px-8 py-3 font-bold border border-[#27272a] hover:bg-[#27272a] transition-all duration-200">
+            Join Newsletter
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Column (Three.js Container) -->
+      <div class="lg:col-span-5 flex justify-center items-center relative min-h-[350px] md:min-h-[450px]">
+        <!-- Subtle neo-brutalist dashed grid background behind the globe -->
+        <div class="absolute inset-0 border-2 border-dashed border-[#27272a]/40 rounded-3xl pointer-events-none"></div>
+        <div class="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-[#c026d3] pointer-events-none"></div>
+        <div class="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-[#22d3ee] pointer-events-none"></div>
+
+        <div class="w-full h-full max-w-[400px] max-h-[400px] aspect-square relative z-10">
+          <Globe />
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Posts Grid -->
+    <section id="latest-thoughts" class="max-w-6xl mx-auto px-4 py-24 border-t border-[#27272a]">
+      <div class="text-center space-y-4 mb-16">
+        <div>
+          <span class="inline-block bg-[#22d3ee] text-[#0a0a0a] text-xs font-black tracking-widest px-3 py-1 rounded-full uppercase border border-black">
+            LATEST
+          </span>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-black tracking-tighter text-[#fafafa] uppercase">
+          Latest Thoughts
+        </h2>
+        <p class="text-[#a1a1aa] max-w-md mx-auto text-sm md:text-base">
+          Freshly compiled technical insights, rants, and tutorials straight from the source.
+        </p>
+      </div>
+
+      <!-- Post Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {latestPosts.map((post) => (
+          <div class="post-card opacity-0 translate-y-8 transition-all duration-700 ease-out bg-[#171717] border-2 border-[#27272a] rounded-2xl overflow-hidden hover:border-[#c026d3] hover:shadow-[8px_8px_0px_0px_rgba(192,38,211,0.4)] hover:-translate-y-1 flex flex-col h-full">
+            <a href={`/posts/${post.frontmatter.slug}`} class="block relative aspect-video overflow-hidden border-b border-[#27272a] bg-[#0a0a0a]">
+              {post.frontmatter.image?.url ? (
+                <img
+                  src={post.frontmatter.image.url}
+                  alt={post.frontmatter.image.alt || post.frontmatter.title}
+                  class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                  width="400"
+                  height="225"
+                />
+              ) : (
+                <div class="w-full h-full bg-gradient-to-tr from-[#c026d3]/20 to-[#22d3ee]/20 flex items-center justify-center">
+                  <span class="text-[#c026d3] font-bold text-lg">Aadil Mallick</span>
+                </div>
+              )}
+              <span class="absolute bottom-3 left-3 bg-[#0a0a0a]/90 backdrop-blur-sm border border-[#27272a] text-[#a1a1aa] text-xs font-mono py-1 px-2.5 rounded-md">
+                {formatDate(post.frontmatter.date)}
+              </span>
+            </a>
+
+            <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
+              <div class="space-y-3">
+                <div class="flex flex-wrap gap-1.5">
+                  {post.frontmatter.tags.slice(0, 3).map((tag) => (
+                    <span class="text-[10px] font-black uppercase tracking-wider text-[#22d3ee] bg-[#22d3ee]/10 px-2 py-0.5 rounded-full border border-[#22d3ee]/20">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <h3 class="text-xl font-bold tracking-tight text-[#fafafa] hover:text-[#c026d3] transition-colors line-clamp-2">
+                  <a href={`/posts/${post.frontmatter.slug}`}>{post.frontmatter.title}</a>
+                </h3>
+
+                <p class="text-sm text-[#a1a1aa] line-clamp-3 leading-relaxed">
+                  {post.frontmatter.excerpt}
+                </p>
+              </div>
+
+              <div class="pt-4 border-t border-[#27272a] flex items-center justify-between">
+                <span class="text-xs font-mono text-[#a1a1aa]">
+                  By {post.frontmatter.author || "Aadil Mallick"}
+                </span>
+                <a href={`/posts/${post.frontmatter.slug}`} class="text-[#c026d3] font-bold text-sm hover:text-[#22d3ee] transition-colors inline-flex items-center gap-1 group">
+                  Read More
+                  <span class="transition-transform group-hover:translate-x-1">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- High-Impact Full-Bleed Banner -->
+    <section class="relative overflow-hidden bg-[#c026d3] text-[#0a0a0a] py-24 px-6 border-t-2 border-b-2 border-black">
+      <!-- Animated floating background shapes -->
+      <div class="absolute -top-12 -left-12 w-32 h-32 rounded-full border-4 border-black/10 animate-float pointer-events-none"></div>
+      <div class="absolute -bottom-16 -right-16 w-48 h-48 border-4 border-black/10 animate-float pointer-events-none" style="animation-delay: -2s; animation-duration: 8s;"></div>
+      <div class="absolute top-1/4 left-[80%] w-12 h-12 bg-[#22d3ee] rotate-45 animate-float pointer-events-none" style="animation-delay: -4s; animation-duration: 7s;"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center space-y-6">
+        <h2 class="text-3xl md:text-6xl font-black tracking-tighter uppercase leading-[1.1] select-none">
+          Building the future, <br class="hidden sm:inline" /> one commit at a time.
+        </h2>
+        <p class="text-lg md:text-xl font-semibold opacity-90 max-w-2xl mx-auto leading-relaxed">
+          Sharing structured findings, design paradigms, and optimization tips on performance-obsessed engineering.
+        </p>
+        <div class="pt-4">
+          <button id="banner-subscribe-btn" class="bg-[#0a0a0a] text-white font-black uppercase tracking-wider rounded-full px-8 py-4 border-2 border-black hover:bg-[#171717] hover:shadow-[4px_4px_0px_0px_#22d3ee] hover:-translate-y-1 active:translate-y-0 active:shadow-none transition-all duration-200">
+            Join the community
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#0a0a0a] border-t border-zinc-800 text-[#fafafa] py-16 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Column 1: About -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded overflow-hidden border border-[#27272a] p-1 bg-[#171717] flex items-center justify-center">
+            <img src={Logo} alt="Logo" class="w-full h-full object-contain" />
+          </div>
+          <span class="text-lg font-black tracking-tight text-[#fafafa]">AADIL MALLICK</span>
+        </div>
+        <p class="text-[#a1a1aa] leading-relaxed text-sm">
+          A development log exploring highly-optimized frontend engineering, modular architectures, and Web3 neo-brutalist designs.
+        </p>
+        <p class="text-xs text-[#a1a1aa]/60">
+          © {new Date().getFullYear()} Aadil Mallick. All rights reserved.
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="space-y-4">
+        <h4 class="text-sm font-bold uppercase tracking-wider text-[#22d3ee]">Navigation</h4>
+        <ul class="space-y-2 text-sm text-[#a1a1aa]">
+          <li><a href="https://aadilmallick.com/about.html" class="hover:text-[#c026d3] transition-colors">About Me</a></li>
+          <li><a href="/" class="hover:text-[#c026d3] transition-colors">Latest Posts</a></li>
+          <li><a href="https://aadilmallick.com/work.html" class="hover:text-[#c026d3] transition-colors">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Newsletter -->
+      <div id="newsletter" class="space-y-4 scroll-mt-24">
+        <h4 class="text-sm font-bold uppercase tracking-wider text-[#c026d3]">Stay Updated</h4>
+        <p class="text-sm text-[#a1a1aa]">
+          Subscribe to the newsletter for notifications about performance engineering, Three.js updates, and creative layouts.
+        </p>
+
+        <form id="newsletter-form" class="flex flex-col sm:flex-row gap-2 max-w-md">
+          <input
+            type="email"
+            placeholder="your.email@example.com"
+            required
+            class="flex-1 bg-[#171717] border border-[#27272a] rounded-full px-4 py-2.5 text-[#fafafa] placeholder-zinc-500 focus:outline-none focus:border-[#c026d3] text-sm"
+          />
+          <button
+            type="submit"
+            class="bg-[#c026d3] text-[#fafafa] font-bold rounded-full px-6 py-2.5 hover:bg-[#c026d3]/90 active:scale-95 transition-all text-sm shrink-0 border border-white/10"
+          >
+            Subscribe
+          </button>
+        </form>
+        <p id="newsletter-status" class="text-xs text-[#22d3ee] hidden font-semibold"></p>
+      </div>
+    </div>
   </footer>
 </MainLayout>
 
+<!-- Performance-driven scripts (Intersection Observer + Interactions) -->
+<script>
+  // Pure JS Intersection Observer to trigger reveal transitions on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0', 'translate-y-8');
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  });
+
+  document.querySelectorAll('.post-card').forEach((card) => {
+    observer.observe(card);
+  });
+
+  // Smooth scroll helper for subscription actions
+  const scrollToNewsletter = () => {
+    const section = document.getElementById('newsletter');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Flash outline to grab attention
+      setTimeout(() => {
+        const input = section.querySelector('input');
+        if (input) input.focus();
+      }, 800);
+    }
+  };
+
+  document.getElementById('nav-subscribe-btn')?.addEventListener('click', scrollToNewsletter);
+  document.getElementById('hero-subscribe-btn')?.addEventListener('click', scrollToNewsletter);
+  document.getElementById('banner-subscribe-btn')?.addEventListener('click', scrollToNewsletter);
+
+  // Simple newsletter submission logic
+  const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
+  const status = document.getElementById('newsletter-status');
+  if (form && status) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const emailInput = form.querySelector('input[type="email"]') as HTMLInputElement | null;
+      if (emailInput && emailInput.value) {
+        status.textContent = `Success! ${emailInput.value} has been subscribed.`;
+        status.classList.remove('hidden');
+        emailInput.value = '';
+        setTimeout(() => {
+          status.classList.add('hidden');
+        }, 5000);
+      }
+    });
+  }
+</script>
+
 <style>
-  .hero {
-    background-image: url("/background.jpg");
+  /* Custom slide in left animation definition as a fallback/reinforcement */
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slideInLeft {
+    animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 </style>
