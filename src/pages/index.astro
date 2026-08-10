@@ -130,8 +130,8 @@ const latestPosts = posts.slice(0, 6);
             <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
               <div class="space-y-3">
                 <div class="flex flex-wrap gap-1.5">
-                  {post.frontmatter.tags.slice(0, 3).map((tag) => (
-                    <span class="text-[10px] font-black uppercase tracking-wider text-[#22d3ee] bg-[#22d3ee]/10 px-2 py-0.5 rounded-full border border-[#22d3ee]/20">
+                  {(post.frontmatter.tags ?? []).slice(0, 3).map((tag) => (
+                    <span class="text-[10px] font-black uppercase tracking-wider text-[`#22d3ee`] bg-[`#22d3ee`]/10 px-2 py-0.5 rounded-full border border-[`#22d3ee`]/20">
                       {tag}
                     </span>
                   ))}
