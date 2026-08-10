@@ -1,3 +1,72 @@
 
 > @example/minimal@0.0.1 dev
 > astro dev
+
+  🚀  astro  v2.10.12 started in 1256ms
+
+  ┃ Local    http://localhost:3000/
+  ┃ Network  use --host to expose
+
+11:38:58 PM [content] Watching src/content/ for changes
+11:38:59 PM [astro] update /dev.log
+[2K[1G[1A11:38:59 PM [astro] update /dev.log (x2)
+11:38:59 PM [content] Types generated
+11:38:59 PM [astro] update /.astro/types.d.ts
+11:38:59 PM [astro] update /dev.log
+11:39:55 PM [astro] update /tailwind.config.cjs
+11:39:55 PM [astro] update /dev.log
+11:40:13 PM [astro] update /src/components/Globe.astro
+11:40:13 PM [astro] update /dev.log
+11:41:52 PM [astro] update /src/pages/index.astro
+11:41:52 PM [astro] update /dev.log
+11:42:36 PM [astro] update /.astro/types.d.ts
+11:42:36 PM [astro] update /dev.log
+11:42:42 PM [astro] update /dist/valencia-day-5.m4a
+11:42:42 PM [astro] update /dev.log
+11:42:45 PM [astro] update /dist/aadilbrickbg.jpg
+11:42:45 PM [astro] update /dist/about.txt
+11:42:45 PM [astro] update /dist/android-chrome-192x192.png
+11:42:45 PM [astro] update /dist/android-chrome-512x512.png
+11:42:45 PM [astro] update /dist/apple-touch-icon.png
+11:42:45 PM [astro] update /dist/background.jpg
+11:42:45 PM [astro] update /dist/favicon-16x16.png
+11:42:45 PM [astro] update /dist/favicon-32x32.png
+11:42:45 PM [astro] update /dist/favicon.ico
+11:42:45 PM [astro] update /dist/favicon.svg
+11:42:45 PM [astro] update /dist/guitar-assets/Cshapemin7chordgrip.webp
+11:42:45 PM [astro] update /dist/guitar-assets/Dshapemaj7extended.webp
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-23-02-30.svg
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-23-05-29.svg
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-23-09-28.svg
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-23-07-10.svg
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-23-08-16.svg
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-23-11-43.svg
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-23-14-29.svg
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-23-59-50.svg
+11:42:45 PM [astro] update /dist/guitar-assets/chart-2025-06-24-09-13.svg
+11:42:45 PM [astro] update /dist/guitar-assets/connectingGshapemaj7.webp
+11:42:45 PM [astro] update /dist/guitar-assets/cshapemaj72octavediagram.webp
+11:42:45 PM [astro] update /dist/guitar-assets/maj7Gshape1octave.webp
+11:42:45 PM [astro] update /dist/guitar-assets/maj7allchordgrips.webp
+11:42:45 PM [astro] update /dist/guitar-assets/maj7eset.svg
+11:42:45 PM [astro] update /dist/guitar-assets/min7chordgripAshape.webp
+11:42:45 PM [astro] update /dist/guitar-assets/min7chordgrpip1.webp
+11:42:45 PM [astro] update /dist/guitar-assets/min7diagram.webp
+11:42:45 PM [astro] update /dist/guitar-assets/somethinsomething.webp
+11:42:45 PM [astro] update /dist/site.webmanifest
+11:42:45 PM [astro] update /dev.log
+[2K[1G[1A11:42:45 PM [astro] update /dev.log (x2)
+[2K[1G[1A11:42:45 PM [astro] update /dev.log (x3)
+[2K[1G[1A11:42:45 PM [astro] update /dev.log (x4)
+[2K[1G[1A11:42:45 PM [astro] update /dev.log (x5)
+[2K[1G[1A11:42:45 PM [astro] update /dev.log (x6)
+[2K[1G[1A11:42:45 PM [astro] update /dev.log (x7)
+[2K[1G[1A11:42:45 PM [astro] update /dev.log (x8)
+[2K[1G[1A11:42:46 PM [astro] update /dev.log (x9)
+[2K[1G[1A11:42:46 PM [astro] update /dev.log (x10)
+11:42:46 PM [astro] update /dist/valencia-day-5.m4a
+11:42:46 PM [astro] update /dev.log
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[2K[1G[1A11:43:25 PM [astro] update /dev.log (x2)
