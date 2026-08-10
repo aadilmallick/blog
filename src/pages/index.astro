@@ -221,20 +221,23 @@ const latestPosts = posts.slice(0, 6);
         </p>
 
         <form id="newsletter-form" class="flex flex-col sm:flex-row gap-2 max-w-md">
+          <label for="newsletter-email" class="sr-only">Email address</label>
           <input
             type="email"
+            id="newsletter-email"
+            name="email"
             placeholder="your.email@example.com"
             required
-            class="flex-1 bg-[#171717] border border-[#27272a] rounded-full px-4 py-2.5 text-[#fafafa] placeholder-zinc-500 focus:outline-none focus:border-[#c026d3] text-sm"
+            class="flex-1 bg-[`#171717`] border border-[`#27272a`] rounded-full px-4 py-2.5 text-[`#fafafa`] placeholder-zinc-500 focus:outline-none focus:border-[`#c026d3`] text-sm"
           />
           <button
             type="submit"
-            class="bg-[#c026d3] text-[#fafafa] font-bold rounded-full px-6 py-2.5 hover:bg-[#c026d3]/90 active:scale-95 transition-all text-sm shrink-0 border border-white/10"
+            class="bg-[`#c026d3`] text-[`#fafafa`] font-bold rounded-full px-6 py-2.5 hover:bg-[`#c026d3`]/90 active:scale-95 transition-all text-sm shrink-0 border border-white/10"
           >
             Subscribe
           </button>
         </form>
-        <p id="newsletter-status" class="text-xs text-[#22d3ee] hidden font-semibold"></p>
+        <p id="newsletter-status" role="status" aria-live="polite" class="text-xs text-[`#22d3ee`] hidden font-semibold"></p>
       </div>
     </div>
   </footer>
