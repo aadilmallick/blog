@@ -3,14 +3,14 @@
 ---
 
 <div class="relative w-full h-full min-h-[300px] md:min-h-[400px] flex items-center justify-center overflow-hidden">
-  <canvas id="globe-canvas" class="w-full h-full block absolute inset-0 outline-none"></canvas>
+  <canvas data-globe class="w-full h-full block absolute inset-0 outline-none"></canvas>
 </div>
 
 <script>
   // Dynamic lazy import of Three.js to not block initial render or page load
-  async function initGlobe() {
-    const canvas = document.getElementById('globe-canvas') as HTMLCanvasElement | null;
-    if (!canvas) return;
+  async function initGlobes() {
+    const canvases = document.querySelectorAll('canvas[data-globe]') as NodeListOf<HTMLCanvasElement>;
+    if (canvases.length === 0) return;
 
     // Check if scheduler.yield is available
     const hasYield = 'scheduler' in window && typeof (window as any).scheduler.yield === 'function';
@@ -26,115 +26,152 @@
       await (window as any).scheduler.yield();
     }
 
-    const container = canvas.parentElement;
-    if (!container) return;
+    // Check for user reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // Get width and height
-    let width = container.clientWidth || 400;
-    let height = container.clientHeight || 400;
+    canvases.forEach(async (canvas) => {
+      const container = canvas.parentElement;
+      if (!container) return;
 
-    // Scene creation
-    const scene = new THREE.Scene();
+      // Get width and height
+      let width = container.clientWidth || 400;
+      let height = container.clientHeight || 400;
 
-    // Camera creation
-    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-    camera.position.z = 3;
+      // Scene creation
+      const scene = new THREE.Scene();
 
-    // Renderer creation with antialiasing and transparent background
-    const renderer = new THREE.WebGLRenderer({
-      canvas: canvas,
-      antialias: true,
-      alpha: true,
-      powerPreference: "high-performance"
-    });
-    renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      // Camera creation
+      const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
+      camera.position.z = 3;
 
-    if (hasYield) {
-      await (window as any).scheduler.yield();
-    }
+      // Renderer creation with antialiasing and transparent background
+      const renderer = new THREE.WebGLRenderer({
+        canvas: canvas,
+        antialias: true,
+        alpha: true,
+        powerPreference: "high-performance"
+      });
+      renderer.setSize(width, height);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-    // Geometry - Icosahedron for a low-poly stylized look
-    const geometry = new THREE.IcosahedronGeometry(1.2, 2);
-
-    if (hasYield) {
-      await (window as any).scheduler.yield();
-    }
-
-    // Fuchsia wireframe style
-    const material = new THREE.MeshBasicMaterial({
-      color: 0xc026d3, // Fuchsia
-      wireframe: true,
-      transparent: true,
-      opacity: 0.85
-    });
-
-    const globe = new THREE.Mesh(geometry, material);
-    scene.add(globe);
-
-    // Inner glowing solid low-poly (very slightly visible)
-    const innerMaterial = new THREE.MeshBasicMaterial({
-      color: 0x171717,
-      transparent: true,
-      opacity: 0.3,
-      wireframe: false
-    });
-    const innerGlobe = new THREE.Mesh(geometry, innerMaterial);
-    innerGlobe.scale.setScalar(0.99);
-    scene.add(innerGlobe);
-
-    // Resize handler
-    const resizeObserver = new ResizeObserver((entries) => {
-      for (let entry of entries) {
-        const { width: w, height: h } = entry.contentRect;
-        if (w <= 0 || h <= 0) continue;
-        camera.aspect = w / h;
-        camera.updateProjectionMatrix();
-        renderer.setSize(w, h);
+      if (hasYield) {
+        await (window as any).scheduler.yield();
       }
-    });
-    resizeObserver.observe(container);
 
-    // Animation Loop
-    let animationFrameId: number;
-    let clock = new THREE.Clock();
+      // Geometry - Icosahedron for a low-poly stylized look
+      const geometry = new THREE.IcosahedronGeometry(1.2, 2);
 
-    function animate() {
-      animationFrameId = requestAnimationFrame(animate);
+      if (hasYield) {
+        await (window as any).scheduler.yield();
+      }
 
-      const elapsedTime = clock.getElapsedTime();
+      // Fuchsia wireframe style
+      const material = new THREE.MeshBasicMaterial({
+        color: 0xc026d3, // Fuchsia
+        wireframe: true,
+        transparent: true,
+        opacity: 0.85
+      });
 
-      // Rotate the globe continuously
-      globe.rotation.y = elapsedTime * 0.15;
-      globe.rotation.x = elapsedTime * 0.08;
+      const globe = new THREE.Mesh(geometry, material);
+      scene.add(globe);
 
-      innerGlobe.rotation.y = elapsedTime * 0.15;
-      innerGlobe.rotation.x = elapsedTime * 0.08;
+      // Inner glowing solid low-poly (very slightly visible)
+      const innerMaterial = new THREE.MeshBasicMaterial({
+        color: 0x171717,
+        transparent: true,
+        opacity: 0.3,
+        wireframe: false
+      });
+      const innerGlobe = new THREE.Mesh(geometry, innerMaterial);
+      innerGlobe.scale.setScalar(0.99);
+      scene.add(innerGlobe);
 
+      // Resize handler
+      const resizeObserver = new ResizeObserver((entries) => {
+        for (let entry of entries) {
+          const { width: w, height: h } = entry.contentRect;
+          if (w <= 0 || h <= 0) continue;
+          camera.aspect = w / h;
+          camera.updateProjectionMatrix();
+          renderer.setSize(w, h);
+          // If reduced motion, re-render single frame upon resize
+          if (prefersReducedMotion) {
+            renderer.render(scene, camera);
+          }
+        }
+      });
+      resizeObserver.observe(container);
+
+      let animationFrameId: number;
+      let clock = new THREE.Clock();
+      let isVisible = false;
+
+      // Render a single static frame initially
       renderer.render(scene, camera);
-    }
 
-    animate();
+      // If user does not prefer reduced motion, configure animation loop with visibility observer
+      if (!prefersReducedMotion) {
+        const animate = () => {
+          if (!isVisible) return;
+          animationFrameId = requestAnimationFrame(animate);
 
-    // Clean up on component destruction / page transition if needed
-    window.addEventListener('beforeunload', () => {
-      cancelAnimationFrame(animationFrameId);
-      resizeObserver.disconnect();
-      geometry.dispose();
-      material.dispose();
-      innerMaterial.dispose();
-      renderer.dispose();
-    }, { once: true });
+          const elapsedTime = clock.getElapsedTime();
+
+          // Rotate the globe continuously
+          globe.rotation.y = elapsedTime * 0.15;
+          globe.rotation.x = elapsedTime * 0.08;
+
+          innerGlobe.rotation.y = elapsedTime * 0.15;
+          innerGlobe.rotation.x = elapsedTime * 0.08;
+
+          renderer.render(scene, camera);
+        };
+
+        const visibilityObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (!isVisible) {
+                isVisible = true;
+                clock.start(); // Restart clock to avoid jumpy animations
+                animate();
+              }
+            } else {
+              if (isVisible) {
+                isVisible = false;
+                cancelAnimationFrame(animationFrameId);
+              }
+            }
+          });
+        }, { threshold: 0.05 });
+
+        visibilityObserver.observe(canvas);
+
+        window.addEventListener('beforeunload', () => {
+          visibilityObserver.disconnect();
+        }, { once: true });
+      }
+
+      // Clean up on component destruction / page transition if needed
+      window.addEventListener('beforeunload', () => {
+        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        resizeObserver.disconnect();
+        geometry.dispose();
+        material.dispose();
+        innerMaterial.dispose();
+        renderer.dispose();
+      }, { once: true });
+    });
   }
 
   // Defer initialization to requestIdleCallback or setTimeout for Safari
   const loadWhenIdle = () => {
     if ('requestIdleCallback' in window) {
       window.requestIdleCallback(() => {
-        initGlobe();
+        initGlobes();
       }, { timeout: 2000 });
     } else {
-      setTimeout(initGlobe, 200);
+      setTimeout(initGlobes, 200);
     }
   };
 
