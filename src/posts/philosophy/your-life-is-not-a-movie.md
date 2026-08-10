@@ -10,7 +10,7 @@ image:
   alt: Stoicism
 tags:
   - philosophy
-  - personal
+  - life
 sub_tags: 
 draft: true
 ---
